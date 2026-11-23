@@ -6,9 +6,9 @@
 
 | 方式 | 地址 | 说明 |
 | --- | --- | --- |
-| jsDelivr（推荐） | `https://cdn.jsdelivr.net/gh/xezzon/oil-pricing-ics@main/oil-pricing.ics` | 正确返回 `text/calendar`，Google 日历、Apple 日历均可直接订阅 |
-| GitHub Pages | `https://xezzon.github.io/oil-pricing-ics/oil-pricing.ics` | 需在仓库 Settings → Pages 中选择 `main` 分支根目录启用一次 |
-| 仓库原始文件 | `https://raw.githubusercontent.com/xezzon/oil-pricing-ics/main/oil-pricing.ics` | 返回 `text/plain`，部分客户端（如 Google 日历）会拒绝 |
+| jsDelivr（推荐） | `https://cdn.jsdelivr.net/gh/xezzon/oil-pricing-ics@gh/oil-pricing.ics` | 正确返回 `text/calendar`，Google 日历、Apple 日历均可直接订阅 |
+| GitHub Pages | `https://xezzon.github.io/oil-pricing-ics/oil-pricing.ics` | 需在仓库 Settings → Pages 中选择 `gh` 分支根目录启用一次 |
+| 仓库原始文件 | `https://raw.githubusercontent.com/xezzon/oil-pricing-ics/gh/oil-pricing.ics` | 返回 `text/plain`，部分客户端（如 Google 日历）会拒绝 |
 
 订阅时把地址填进「日历 → 通过网址添加」。自动刷新周期取决于客户端，日历本身声明了 `REFRESH-INTERVAL:P1W`
 和 `X-PUBLISHED-TTL:PT6H`。
