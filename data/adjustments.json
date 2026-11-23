@@ -1,0 +1,664 @@
+{
+  "source": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+  "updated": "2026-11-23T12:49:57Z",
+  "windows": [
+    {
+      "date": "2023-02-17",
+      "title": "2023年2月17日国内成品油价格不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202302/t20230217_1348864.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2023-03-03",
+      "title": "2023年3月3日国内成品油价格不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230303_1350622.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2023-03-17",
+      "title": "2023年3月17日24时起国内成品油价格按机制下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230317_1351325.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2023-03-31",
+      "title": "2023年3月31日24时起国内成品油价格按机制下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230331_1353081.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2023-04-17",
+      "title": "2023年4月17日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230417_1353648.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-04-28",
+      "title": "2023年4月28日24时起国内成品油价格按机制下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230428_1355157.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2023-05-16",
+      "title": "2023年5月16日24时起国内成品油价格按机制下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230516_1355789.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2023-05-30",
+      "title": "2023年5月30日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230530_1356745.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-06-13",
+      "title": "2023年6月13日24时起国内成品油价格按机制下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230613_1357539.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2023-06-28",
+      "title": "2023年6月28日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230628_1357927.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-07-12",
+      "title": "2023年7月12日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230712_1358334.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-07-26",
+      "title": "2023年7月26日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230726_1358699.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-08-09",
+      "title": "2023年8月9日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230809_1359258.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-08-23",
+      "title": "2023年8月23日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230823_1360025.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2023-09-06",
+      "title": "2023年9月6日国内成品油价格不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230906_1360397.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2023-09-20",
+      "title": "2023年9月20日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230920_1360717.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-10-10",
+      "title": "2023年10月10日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231010_1361121.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-10-24",
+      "title": "2023年10月24日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231024_1361478.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-11-07",
+      "title": "2023年11月7日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231107_1361829.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-11-21",
+      "title": "2023年11月21日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231121_1362158.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-12-05",
+      "title": "2023年12月5日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231205_1362437.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2023-12-19",
+      "title": "2023年12月19日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231219_1362767.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-01-03",
+      "title": "2024年1月3日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240103_1363079.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-01-17",
+      "title": "2024年1月17日24时起国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240117_1363439.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-01-31",
+      "title": "2024年1月31日24时起国内成品油价格按机制上调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240131_1363834.html",
+      "status": "adjusted",
+      "direction": "up"
+    },
+    {
+      "date": "2024-02-19",
+      "title": "2024年2月19日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202402/t20240219_1364095.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-03-04",
+      "title": "2024年3月4日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240304_1364393.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-03-18",
+      "title": "2024年3月18日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240318_1365046.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-04-01",
+      "title": "2024年4月1日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240401_1365388.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-04-16",
+      "title": "国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240416_1365703.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-04-29",
+      "title": "2024年4月29日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240429_1366287.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-05-15",
+      "title": "2024年5月15日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240515_1386222.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-05-29",
+      "title": "2024年5月29日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240529_1386532.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-06-13",
+      "title": "2024年6月13日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240613_1386864.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-06-27",
+      "title": "2024年6月27日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240627_1391342.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-07-11",
+      "title": "2024年7月11日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240711_1391617.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-07-25",
+      "title": "2024年7月25日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240725_1391947.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-08-08",
+      "title": "2024年8月8日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240808_1392318.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-08-22",
+      "title": "2024年8月22日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240822_1392530.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-09-05",
+      "title": "2024年9月5日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240905_1392834.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-09-20",
+      "title": "2024年9月20日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240920_1393111.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-10-10",
+      "title": "2024年10月10日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241010_1393553.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-10-23",
+      "title": "2024年10月23日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241023_1393865.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-11-06",
+      "title": "2024年11月6日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241106_1394298.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2024-11-20",
+      "title": "2024年11月20日国内成品油价格不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241120_1394603.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-12-04",
+      "title": "2024年12月4日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241204_1394837.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2024-12-18",
+      "title": "2024年12月18日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241218_1395064.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-01-02",
+      "title": "2025年1月2日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250102_1395423.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-01-16",
+      "title": "2025年1月16日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250116_1395727.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-02-06",
+      "title": "2025年2月6日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250206_1396007.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-02-19",
+      "title": "2025年2月19日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250219_1396225.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-03-05",
+      "title": "2025年3月5日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250305_1396430.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-03-19",
+      "title": "2025年3月19日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250319_1396715.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-04-02",
+      "title": "2025年4月2日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250402_1396996.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-04-17",
+      "title": "2025年4月17日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250417_1397240.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-04-30",
+      "title": "2025年4月30日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250430_1397516.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-05-19",
+      "title": "2025年5月19日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202505/t20250519_1397793.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-06-03",
+      "title": "2025年6月3日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250603_1398198.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-06-17",
+      "title": "2025年6月17日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250617_1398486.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-07-01",
+      "title": "2025年7月1日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250701_1398919.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-07-15",
+      "title": "2025年7月15日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250715_1399195.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-07-29",
+      "title": "2025年7月29日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250729_1399467.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-08-12",
+      "title": "2025年8月12日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250812_1399754.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-08-26",
+      "title": "2025年8月26日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250826_1400056.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-09-09",
+      "title": "2025年9月9日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250909_1400343.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-09-23",
+      "title": "2025年9月23日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250923_1400624.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2025-10-13",
+      "title": "2025年10月13日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251013_1400937.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-10-27",
+      "title": "2025年10月27日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251027_1401193.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-11-10",
+      "title": "2025年11月10日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251110_1401464.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-11-24",
+      "title": "2025年11月24日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251124_1401864.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-12-08",
+      "title": "2025年12月8日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251208_1402287.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2025-12-22",
+      "title": "2025年12月22日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251222_1402523.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-01-06",
+      "title": "2026年1月6日国内成品油价格按机制不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260106_1403050.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2026-01-20",
+      "title": "2026年1月20日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260120_1403319.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-02-03",
+      "title": "2026年2月3日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260203_1403566.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-02-24",
+      "title": "2026年2月24日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260224_1403852.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-03-09",
+      "title": "2026年3月9日国内成品油价格按机制调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260309_1404075.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-03-23",
+      "title": "2026年3月23日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260323_1404295.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-04-07",
+      "title": "2026年4月7日国家继续实施调控，成品油价格适当调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260407_1404528.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-04-21",
+      "title": "2026年4月21日国内成品油价格下调",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260421_1404789.html",
+      "status": "adjusted",
+      "direction": "down"
+    },
+    {
+      "date": "2026-05-08",
+      "title": "2026年5月8日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260508_1405100.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-05-21",
+      "title": "2026年5月21日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260521_1405346.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-06-04",
+      "title": "2026年6月4日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "2026年6月18日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-07-03",
+      "title": "2026年7月3日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "2026年7月17日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "2026年7月31日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260731_1406853.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-08-14",
+      "title": "2026年8月14日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260814_1406999.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "2026年8月28日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260828_1407254.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "2026年9月11日国家对成品油价格实施调控",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260911_1407564.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "2026年9月24日国家继续实施调控，成品油价格适当调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260924_1407824.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "2026年10月15日国内成品油价格不作调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170.html",
+      "status": "unchanged",
+      "direction": "none"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "2026年10月29日国家再次实施调控，成品油价格适当调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "2026年11月12日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html",
+      "status": "adjusted",
+      "direction": "unknown"
+    }
+  ]
+}

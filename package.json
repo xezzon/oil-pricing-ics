@@ -1,0 +1,15 @@
+{
+  "name": "oil-pricing-ics",
+  "version": "1.0.0",
+  "description": "国内成品油调价日历（ics），每周自动更新",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "test": "node --test"
+  }
+}
