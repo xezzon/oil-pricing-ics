@@ -1,664 +1,2994 @@
 {
-  "source": "https://www.ndrc.gov.cn/xwdt/xwfb/",
-  "updated": "2026-11-23T12:49:57Z",
+  "source": "https://data.eastmoney.com/cjsj/oil_default.html",
+  "updated": "2026-11-23T13:06:08Z",
   "windows": [
     {
-      "date": "2023-02-17",
-      "title": "2023年2月17日国内成品油价格不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202302/t20230217_1348864.html",
-      "status": "unchanged",
-      "direction": "none"
+      "date": "2000-06-05",
+      "effective": "2000-06-06",
+      "gasolinePrice": 2935,
+      "dieselPrice": 2430,
+      "gasolineChange": null,
+      "dieselChange": null,
+      "direction": "unknown"
     },
     {
-      "date": "2023-03-03",
-      "title": "2023年3月3日国内成品油价格不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230303_1350622.html",
-      "status": "unchanged",
-      "direction": "none"
+      "date": "2000-07-14",
+      "effective": "2000-07-15",
+      "gasolinePrice": 3135,
+      "dieselPrice": 2610,
+      "gasolineChange": 200,
+      "dieselChange": 180,
+      "direction": "up"
+    },
+    {
+      "date": "2000-08-17",
+      "effective": "2000-08-18",
+      "gasolinePrice": 3405,
+      "dieselPrice": 2770,
+      "gasolineChange": 270,
+      "dieselChange": 160,
+      "direction": "up"
+    },
+    {
+      "date": "2000-09-19",
+      "effective": "2000-09-20",
+      "gasolinePrice": 3615,
+      "dieselPrice": 3070,
+      "gasolineChange": 210,
+      "dieselChange": 300,
+      "direction": "up"
+    },
+    {
+      "date": "2000-10-19",
+      "effective": "2000-10-20",
+      "gasolinePrice": 3435,
+      "dieselPrice": 3440,
+      "gasolineChange": -180,
+      "dieselChange": 370,
+      "direction": "down"
+    },
+    {
+      "date": "2000-11-17",
+      "effective": "2000-11-18",
+      "gasolinePrice": 3185,
+      "dieselPrice": 3310,
+      "gasolineChange": -250,
+      "dieselChange": -130,
+      "direction": "down"
+    },
+    {
+      "date": "2000-12-20",
+      "effective": "2000-12-21",
+      "gasolinePrice": 3165,
+      "dieselPrice": 3010,
+      "gasolineChange": -20,
+      "dieselChange": -300,
+      "direction": "down"
+    },
+    {
+      "date": "2001-01-13",
+      "effective": "2001-01-14",
+      "gasolinePrice": 3035,
+      "dieselPrice": 2675,
+      "gasolineChange": -130,
+      "dieselChange": -335,
+      "direction": "down"
+    },
+    {
+      "date": "2001-02-05",
+      "effective": "2001-02-06",
+      "gasolinePrice": 2870,
+      "dieselPrice": 2485,
+      "gasolineChange": -165,
+      "dieselChange": -190,
+      "direction": "down"
+    },
+    {
+      "date": "2001-03-06",
+      "effective": "2001-03-07",
+      "gasolinePrice": 3080,
+      "dieselPrice": 2440,
+      "gasolineChange": 210,
+      "dieselChange": -45,
+      "direction": "up"
+    },
+    {
+      "date": "2001-04-09",
+      "effective": "2001-04-10",
+      "gasolinePrice": 2970,
+      "dieselPrice": 2350,
+      "gasolineChange": -110,
+      "dieselChange": -90,
+      "direction": "down"
+    },
+    {
+      "date": "2001-05-14",
+      "effective": "2001-05-15",
+      "gasolinePrice": 3070,
+      "dieselPrice": 2560,
+      "gasolineChange": 100,
+      "dieselChange": 210,
+      "direction": "up"
+    },
+    {
+      "date": "2001-06-05",
+      "effective": "2001-06-06",
+      "gasolinePrice": 3260,
+      "dieselPrice": 2690,
+      "gasolineChange": 190,
+      "dieselChange": 130,
+      "direction": "up"
+    },
+    {
+      "date": "2001-07-03",
+      "effective": "2001-07-04",
+      "gasolinePrice": 2810,
+      "dieselPrice": 2630,
+      "gasolineChange": -450,
+      "dieselChange": -60,
+      "direction": "down"
+    },
+    {
+      "date": "2001-08-08",
+      "effective": "2001-08-09",
+      "gasolinePrice": 2530,
+      "dieselPrice": 2580,
+      "gasolineChange": -280,
+      "dieselChange": -50,
+      "direction": "down"
+    },
+    {
+      "date": "2001-09-09",
+      "effective": "2001-09-10",
+      "gasolinePrice": 2530,
+      "dieselPrice": 2480,
+      "gasolineChange": 0,
+      "dieselChange": -100,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2001-10-17",
+      "effective": "2001-10-18",
+      "gasolinePrice": 2780,
+      "dieselPrice": 2500,
+      "gasolineChange": 250,
+      "dieselChange": 20,
+      "direction": "up"
+    },
+    {
+      "date": "2001-11-24",
+      "effective": "2001-11-25",
+      "gasolinePrice": 2420,
+      "dieselPrice": 2140,
+      "gasolineChange": -360,
+      "dieselChange": -360,
+      "direction": "down"
+    },
+    {
+      "date": "2002-01-01",
+      "effective": "2002-01-02",
+      "gasolinePrice": 2190,
+      "dieselPrice": 1930,
+      "gasolineChange": -230,
+      "dieselChange": -210,
+      "direction": "down"
+    },
+    {
+      "date": "2002-03-04",
+      "effective": "2002-03-05",
+      "gasolinePrice": 2320,
+      "dieselPrice": 2060,
+      "gasolineChange": 130,
+      "dieselChange": 130,
+      "direction": "up"
+    },
+    {
+      "date": "2002-04-04",
+      "effective": "2002-04-05",
+      "gasolinePrice": 2580,
+      "dieselPrice": 2300,
+      "gasolineChange": 260,
+      "dieselChange": 240,
+      "direction": "up"
+    },
+    {
+      "date": "2002-05-04",
+      "effective": "2002-05-05",
+      "gasolinePrice": 2820,
+      "dieselPrice": 2540,
+      "gasolineChange": 240,
+      "dieselChange": 240,
+      "direction": "up"
+    },
+    {
+      "date": "2002-10-11",
+      "effective": "2002-10-12",
+      "gasolinePrice": 3020,
+      "dieselPrice": 2730,
+      "gasolineChange": 200,
+      "dieselChange": 190,
+      "direction": "up"
+    },
+    {
+      "date": "2003-02-01",
+      "effective": "2003-02-02",
+      "gasolinePrice": 3210,
+      "dieselPrice": 2900,
+      "gasolineChange": 190,
+      "dieselChange": 170,
+      "direction": "up"
+    },
+    {
+      "date": "2003-05-10",
+      "effective": "2003-05-11",
+      "gasolinePrice": 2920,
+      "dieselPrice": 2640,
+      "gasolineChange": -290,
+      "dieselChange": -260,
+      "direction": "down"
+    },
+    {
+      "date": "2003-07-01",
+      "effective": "2003-07-02",
+      "gasolinePrice": 3010,
+      "dieselPrice": 2640,
+      "gasolineChange": 90,
+      "dieselChange": 0,
+      "direction": "up"
+    },
+    {
+      "date": "2003-12-06",
+      "effective": "2003-12-07",
+      "gasolinePrice": 3210,
+      "dieselPrice": 2820,
+      "gasolineChange": 200,
+      "dieselChange": 180,
+      "direction": "up"
+    },
+    {
+      "date": "2004-03-31",
+      "effective": "2004-04-01",
+      "gasolinePrice": 3510,
+      "dieselPrice": 2820,
+      "gasolineChange": 300,
+      "dieselChange": 0,
+      "direction": "up"
+    },
+    {
+      "date": "2004-05-18",
+      "effective": "2004-05-19",
+      "gasolinePrice": 3510,
+      "dieselPrice": 3100,
+      "gasolineChange": 0,
+      "dieselChange": 280,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2004-08-25",
+      "effective": "2004-08-26",
+      "gasolinePrice": 3750,
+      "dieselPrice": 3320,
+      "gasolineChange": 240,
+      "dieselChange": 220,
+      "direction": "up"
+    },
+    {
+      "date": "2005-03-23",
+      "effective": "2005-03-24",
+      "gasolinePrice": 4050,
+      "dieselPrice": 3320,
+      "gasolineChange": 300,
+      "dieselChange": 0,
+      "direction": "up"
+    },
+    {
+      "date": "2005-05-10",
+      "effective": "2005-05-11",
+      "gasolinePrice": 4050,
+      "dieselPrice": 3470,
+      "gasolineChange": 0,
+      "dieselChange": 150,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2005-05-24",
+      "effective": "2005-05-25",
+      "gasolinePrice": 3900,
+      "dieselPrice": 3470,
+      "gasolineChange": -150,
+      "dieselChange": 0,
+      "direction": "down"
+    },
+    {
+      "date": "2005-06-25",
+      "effective": "2005-06-26",
+      "gasolinePrice": 4100,
+      "dieselPrice": 3620,
+      "gasolineChange": 200,
+      "dieselChange": 150,
+      "direction": "up"
+    },
+    {
+      "date": "2005-07-23",
+      "effective": "2005-07-24",
+      "gasolinePrice": 4400,
+      "dieselPrice": 3870,
+      "gasolineChange": 300,
+      "dieselChange": 250,
+      "direction": "up"
+    },
+    {
+      "date": "2006-03-26",
+      "effective": "2006-03-27",
+      "gasolinePrice": 4700,
+      "dieselPrice": 4070,
+      "gasolineChange": 300,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2006-05-24",
+      "effective": "2006-05-25",
+      "gasolinePrice": 5200,
+      "dieselPrice": 4570,
+      "gasolineChange": 500,
+      "dieselChange": 500,
+      "direction": "up"
+    },
+    {
+      "date": "2007-01-14",
+      "effective": "2007-01-15",
+      "gasolinePrice": 4980,
+      "dieselPrice": 4570,
+      "gasolineChange": -220,
+      "dieselChange": 0,
+      "direction": "down"
+    },
+    {
+      "date": "2007-11-01",
+      "effective": "2007-11-02",
+      "gasolinePrice": 5480,
+      "dieselPrice": 5070,
+      "gasolineChange": 500,
+      "dieselChange": 500,
+      "direction": "up"
+    },
+    {
+      "date": "2008-06-20",
+      "effective": "2008-06-21",
+      "gasolinePrice": 6480,
+      "dieselPrice": 6070,
+      "gasolineChange": 1000,
+      "dieselChange": 1000,
+      "direction": "up"
+    },
+    {
+      "date": "2008-12-19",
+      "effective": "2008-12-20",
+      "gasolinePrice": 5580,
+      "dieselPrice": 4970,
+      "gasolineChange": -900,
+      "dieselChange": -1100,
+      "direction": "down"
+    },
+    {
+      "date": "2009-01-14",
+      "effective": "2009-01-15",
+      "gasolinePrice": 5440,
+      "dieselPrice": 4810,
+      "gasolineChange": -140,
+      "dieselChange": -160,
+      "direction": "down"
+    },
+    {
+      "date": "2009-03-25",
+      "effective": "2009-03-26",
+      "gasolinePrice": 5730,
+      "dieselPrice": 4990,
+      "gasolineChange": 290,
+      "dieselChange": 180,
+      "direction": "up"
+    },
+    {
+      "date": "2009-04-01",
+      "effective": "2009-04-02",
+      "gasolinePrice": 5730,
+      "dieselPrice": 4990,
+      "gasolineChange": 0,
+      "dieselChange": 0,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2009-05-19",
+      "effective": "2009-05-20",
+      "gasolinePrice": 5730,
+      "dieselPrice": 4990,
+      "gasolineChange": 0,
+      "dieselChange": 0,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2009-06-01",
+      "effective": "2009-06-02",
+      "gasolinePrice": 6130,
+      "dieselPrice": 5390,
+      "gasolineChange": 400,
+      "dieselChange": 400,
+      "direction": "up"
+    },
+    {
+      "date": "2009-06-30",
+      "effective": "2009-07-01",
+      "gasolinePrice": 6730,
+      "dieselPrice": 5990,
+      "gasolineChange": 600,
+      "dieselChange": 600,
+      "direction": "up"
+    },
+    {
+      "date": "2009-07-29",
+      "effective": "2009-07-30",
+      "gasolinePrice": 6510,
+      "dieselPrice": 5770,
+      "gasolineChange": -220,
+      "dieselChange": -220,
+      "direction": "down"
+    },
+    {
+      "date": "2009-09-02",
+      "effective": "2009-09-03",
+      "gasolinePrice": 6810,
+      "dieselPrice": 6070,
+      "gasolineChange": 300,
+      "dieselChange": 300,
+      "direction": "up"
+    },
+    {
+      "date": "2009-09-30",
+      "effective": "2009-10-01",
+      "gasolinePrice": 6620,
+      "dieselPrice": 5880,
+      "gasolineChange": -190,
+      "dieselChange": -190,
+      "direction": "down"
+    },
+    {
+      "date": "2009-10-11",
+      "effective": "2009-10-12",
+      "gasolinePrice": 6620,
+      "dieselPrice": 5880,
+      "gasolineChange": 0,
+      "dieselChange": 0,
+      "direction": "unchanged"
+    },
+    {
+      "date": "2009-11-10",
+      "effective": "2009-11-11",
+      "gasolinePrice": 7100,
+      "dieselPrice": 6360,
+      "gasolineChange": 480,
+      "dieselChange": 480,
+      "direction": "up"
+    },
+    {
+      "date": "2010-04-14",
+      "effective": "2010-04-15",
+      "gasolinePrice": 7420,
+      "dieselPrice": 6680,
+      "gasolineChange": 320,
+      "dieselChange": 320,
+      "direction": "up"
+    },
+    {
+      "date": "2010-06-01",
+      "effective": "2010-06-02",
+      "gasolinePrice": 7190,
+      "dieselPrice": 6460,
+      "gasolineChange": -230,
+      "dieselChange": -220,
+      "direction": "down"
+    },
+    {
+      "date": "2010-10-26",
+      "effective": "2010-10-27",
+      "gasolinePrice": 7420,
+      "dieselPrice": 6680,
+      "gasolineChange": 230,
+      "dieselChange": 220,
+      "direction": "up"
+    },
+    {
+      "date": "2010-12-22",
+      "effective": "2010-12-23",
+      "gasolinePrice": 7730,
+      "dieselPrice": 6980,
+      "gasolineChange": 310,
+      "dieselChange": 300,
+      "direction": "up"
+    },
+    {
+      "date": "2011-02-20",
+      "effective": "2011-02-21",
+      "gasolinePrice": 8080,
+      "dieselPrice": 7330,
+      "gasolineChange": 350,
+      "dieselChange": 350,
+      "direction": "up"
+    },
+    {
+      "date": "2011-04-07",
+      "effective": "2011-04-08",
+      "gasolinePrice": 8580,
+      "dieselPrice": 7730,
+      "gasolineChange": 500,
+      "dieselChange": 400,
+      "direction": "up"
+    },
+    {
+      "date": "2011-10-09",
+      "effective": "2011-10-10",
+      "gasolinePrice": 8280,
+      "dieselPrice": 7430,
+      "gasolineChange": -300,
+      "dieselChange": -300,
+      "direction": "down"
+    },
+    {
+      "date": "2012-02-08",
+      "effective": "2012-02-09",
+      "gasolinePrice": 8580,
+      "dieselPrice": 7730,
+      "gasolineChange": 300,
+      "dieselChange": 300,
+      "direction": "up"
+    },
+    {
+      "date": "2012-03-20",
+      "effective": "2012-03-21",
+      "gasolinePrice": 9180,
+      "dieselPrice": 8330,
+      "gasolineChange": 600,
+      "dieselChange": 600,
+      "direction": "up"
+    },
+    {
+      "date": "2012-05-10",
+      "effective": "2012-05-11",
+      "gasolinePrice": 8850,
+      "dieselPrice": 8020,
+      "gasolineChange": -330,
+      "dieselChange": -310,
+      "direction": "down"
+    },
+    {
+      "date": "2012-06-09",
+      "effective": "2012-06-10",
+      "gasolinePrice": 8320,
+      "dieselPrice": 7510,
+      "gasolineChange": -530,
+      "dieselChange": -510,
+      "direction": "down"
+    },
+    {
+      "date": "2012-07-11",
+      "effective": "2012-07-12",
+      "gasolinePrice": 7900,
+      "dieselPrice": 7110,
+      "gasolineChange": -420,
+      "dieselChange": -400,
+      "direction": "down"
+    },
+    {
+      "date": "2012-08-10",
+      "effective": "2012-08-11",
+      "gasolinePrice": 8290,
+      "dieselPrice": 7480,
+      "gasolineChange": 390,
+      "dieselChange": 370,
+      "direction": "up"
+    },
+    {
+      "date": "2012-09-10",
+      "effective": "2012-09-11",
+      "gasolinePrice": 8840,
+      "dieselPrice": 8020,
+      "gasolineChange": 550,
+      "dieselChange": 540,
+      "direction": "up"
+    },
+    {
+      "date": "2012-11-15",
+      "effective": "2012-11-16",
+      "gasolinePrice": 8530,
+      "dieselPrice": 7720,
+      "gasolineChange": -310,
+      "dieselChange": -300,
+      "direction": "down"
+    },
+    {
+      "date": "2013-02-24",
+      "effective": "2013-02-25",
+      "gasolinePrice": 8830,
+      "dieselPrice": 8010,
+      "gasolineChange": 300,
+      "dieselChange": 290,
+      "direction": "up"
+    },
+    {
+      "date": "2013-03-26",
+      "effective": "2013-03-27",
+      "gasolinePrice": 8520,
+      "dieselPrice": 7710,
+      "gasolineChange": -310,
+      "dieselChange": -300,
+      "direction": "down"
+    },
+    {
+      "date": "2013-04-24",
+      "effective": "2013-04-25",
+      "gasolinePrice": 8125,
+      "dieselPrice": 7310,
+      "gasolineChange": -395,
+      "dieselChange": -400,
+      "direction": "down"
+    },
+    {
+      "date": "2013-05-09",
+      "effective": "2013-05-10",
+      "gasolinePrice": 8220,
+      "dieselPrice": 7405,
+      "gasolineChange": 95,
+      "dieselChange": 95,
+      "direction": "up"
+    },
+    {
+      "date": "2013-06-06",
+      "effective": "2013-06-07",
+      "gasolinePrice": 8125,
+      "dieselPrice": 7315,
+      "gasolineChange": -95,
+      "dieselChange": -90,
+      "direction": "down"
+    },
+    {
+      "date": "2013-06-21",
+      "effective": "2013-06-22",
+      "gasolinePrice": 8225,
+      "dieselPrice": 7410,
+      "gasolineChange": 100,
+      "dieselChange": 95,
+      "direction": "up"
+    },
+    {
+      "date": "2013-07-05",
+      "effective": "2013-07-06",
+      "gasolinePrice": 8145,
+      "dieselPrice": 7335,
+      "gasolineChange": -80,
+      "dieselChange": -75,
+      "direction": "down"
+    },
+    {
+      "date": "2013-07-19",
+      "effective": "2013-07-20",
+      "gasolinePrice": 8470,
+      "dieselPrice": 7645,
+      "gasolineChange": 325,
+      "dieselChange": 310,
+      "direction": "up"
+    },
+    {
+      "date": "2013-08-30",
+      "effective": "2013-08-31",
+      "gasolinePrice": 8705,
+      "dieselPrice": 7870,
+      "gasolineChange": 235,
+      "dieselChange": 225,
+      "direction": "up"
+    },
+    {
+      "date": "2013-09-13",
+      "effective": "2013-09-14",
+      "gasolinePrice": 8795,
+      "dieselPrice": 7955,
+      "gasolineChange": 90,
+      "dieselChange": 85,
+      "direction": "up"
+    },
+    {
+      "date": "2013-09-29",
+      "effective": "2013-09-30",
+      "gasolinePrice": 8550,
+      "dieselPrice": 7720,
+      "gasolineChange": -245,
+      "dieselChange": -235,
+      "direction": "down"
+    },
+    {
+      "date": "2013-10-31",
+      "effective": "2013-11-01",
+      "gasolinePrice": 8475,
+      "dieselPrice": 7645,
+      "gasolineChange": -75,
+      "dieselChange": -75,
+      "direction": "down"
+    },
+    {
+      "date": "2013-11-14",
+      "effective": "2013-11-15",
+      "gasolinePrice": 8315,
+      "dieselPrice": 7490,
+      "gasolineChange": -160,
+      "dieselChange": -155,
+      "direction": "down"
+    },
+    {
+      "date": "2013-11-28",
+      "effective": "2013-11-29",
+      "gasolinePrice": 8475,
+      "dieselPrice": 7645,
+      "gasolineChange": 160,
+      "dieselChange": 155,
+      "direction": "up"
+    },
+    {
+      "date": "2013-12-12",
+      "effective": "2013-12-13",
+      "gasolinePrice": 8535,
+      "dieselPrice": 7705,
+      "gasolineChange": 60,
+      "dieselChange": 60,
+      "direction": "up"
+    },
+    {
+      "date": "2014-01-10",
+      "effective": "2014-01-11",
+      "gasolinePrice": 8700,
+      "dieselPrice": 7585,
+      "gasolineChange": 165,
+      "dieselChange": -120,
+      "direction": "up"
+    },
+    {
+      "date": "2014-01-24",
+      "effective": "2014-01-25",
+      "gasolinePrice": 8570,
+      "dieselPrice": 7460,
+      "gasolineChange": -130,
+      "dieselChange": -125,
+      "direction": "down"
+    },
+    {
+      "date": "2014-02-26",
+      "effective": "2014-02-27",
+      "gasolinePrice": 8775,
+      "dieselPrice": 7660,
+      "gasolineChange": 205,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2014-03-26",
+      "effective": "2014-03-27",
+      "gasolinePrice": 8640,
+      "dieselPrice": 7530,
+      "gasolineChange": -135,
+      "dieselChange": -130,
+      "direction": "down"
+    },
+    {
+      "date": "2014-04-24",
+      "effective": "2014-04-25",
+      "gasolinePrice": 8795,
+      "dieselPrice": 7675,
+      "gasolineChange": 155,
+      "dieselChange": 145,
+      "direction": "up"
+    },
+    {
+      "date": "2014-05-09",
+      "effective": "2014-05-10",
+      "gasolinePrice": 8745,
+      "dieselPrice": 7625,
+      "gasolineChange": -50,
+      "dieselChange": -50,
+      "direction": "down"
+    },
+    {
+      "date": "2014-05-23",
+      "effective": "2014-05-24",
+      "gasolinePrice": 8815,
+      "dieselPrice": 7695,
+      "gasolineChange": 70,
+      "dieselChange": 70,
+      "direction": "up"
+    },
+    {
+      "date": "2014-06-23",
+      "effective": "2014-06-24",
+      "gasolinePrice": 8980,
+      "dieselPrice": 7855,
+      "gasolineChange": 165,
+      "dieselChange": 160,
+      "direction": "up"
+    },
+    {
+      "date": "2014-07-21",
+      "effective": "2014-07-22",
+      "gasolinePrice": 8735,
+      "dieselPrice": 7620,
+      "gasolineChange": -245,
+      "dieselChange": -235,
+      "direction": "down"
+    },
+    {
+      "date": "2014-08-18",
+      "effective": "2014-08-19",
+      "gasolinePrice": 8545,
+      "dieselPrice": 7435,
+      "gasolineChange": -190,
+      "dieselChange": -185,
+      "direction": "down"
+    },
+    {
+      "date": "2014-09-01",
+      "effective": "2014-09-02",
+      "gasolinePrice": 8440,
+      "dieselPrice": 7335,
+      "gasolineChange": -105,
+      "dieselChange": -100,
+      "direction": "down"
+    },
+    {
+      "date": "2014-09-16",
+      "effective": "2014-09-17",
+      "gasolinePrice": 8300,
+      "dieselPrice": 7200,
+      "gasolineChange": -140,
+      "dieselChange": -135,
+      "direction": "down"
+    },
+    {
+      "date": "2014-09-29",
+      "effective": "2014-09-30",
+      "gasolinePrice": 8200,
+      "dieselPrice": 7105,
+      "gasolineChange": -100,
+      "dieselChange": -95,
+      "direction": "down"
+    },
+    {
+      "date": "2014-10-17",
+      "effective": "2014-10-18",
+      "gasolinePrice": 7900,
+      "dieselPrice": 6815,
+      "gasolineChange": -300,
+      "dieselChange": -290,
+      "direction": "down"
+    },
+    {
+      "date": "2014-10-31",
+      "effective": "2014-11-01",
+      "gasolinePrice": 7655,
+      "dieselPrice": 6580,
+      "gasolineChange": -245,
+      "dieselChange": -235,
+      "direction": "down"
+    },
+    {
+      "date": "2014-11-14",
+      "effective": "2014-11-15",
+      "gasolinePrice": 7465,
+      "dieselPrice": 6400,
+      "gasolineChange": -190,
+      "dieselChange": -180,
+      "direction": "down"
+    },
+    {
+      "date": "2014-12-12",
+      "effective": "2014-12-13",
+      "gasolinePrice": 7295,
+      "dieselPrice": 6000,
+      "gasolineChange": -170,
+      "dieselChange": -400,
+      "direction": "down"
+    },
+    {
+      "date": "2014-12-26",
+      "effective": "2014-12-27",
+      "gasolinePrice": 6775,
+      "dieselPrice": 5500,
+      "gasolineChange": -520,
+      "dieselChange": -500,
+      "direction": "down"
+    },
+    {
+      "date": "2015-01-12",
+      "effective": "2015-01-13",
+      "gasolinePrice": 6595,
+      "dieselPrice": 5640,
+      "gasolineChange": -180,
+      "dieselChange": 140,
+      "direction": "down"
+    },
+    {
+      "date": "2015-01-26",
+      "effective": "2015-01-27",
+      "gasolinePrice": 6230,
+      "dieselPrice": 5290,
+      "gasolineChange": -365,
+      "dieselChange": -350,
+      "direction": "down"
+    },
+    {
+      "date": "2015-02-09",
+      "effective": "2015-02-10",
+      "gasolinePrice": 6520,
+      "dieselPrice": 5570,
+      "gasolineChange": 290,
+      "dieselChange": 280,
+      "direction": "up"
+    },
+    {
+      "date": "2015-02-27",
+      "effective": "2015-02-28",
+      "gasolinePrice": 6910,
+      "dieselPrice": 5945,
+      "gasolineChange": 390,
+      "dieselChange": 375,
+      "direction": "up"
+    },
+    {
+      "date": "2015-03-26",
+      "effective": "2015-03-27",
+      "gasolinePrice": 6670,
+      "dieselPrice": 5715,
+      "gasolineChange": -240,
+      "dieselChange": -230,
+      "direction": "down"
+    },
+    {
+      "date": "2015-04-10",
+      "effective": "2015-04-11",
+      "gasolinePrice": 6790,
+      "dieselPrice": 5830,
+      "gasolineChange": 120,
+      "dieselChange": 115,
+      "direction": "up"
+    },
+    {
+      "date": "2015-04-24",
+      "effective": "2015-04-25",
+      "gasolinePrice": 7090,
+      "dieselPrice": 6115,
+      "gasolineChange": 300,
+      "dieselChange": 285,
+      "direction": "up"
+    },
+    {
+      "date": "2015-05-11",
+      "effective": "2015-05-12",
+      "gasolinePrice": 7345,
+      "dieselPrice": 6360,
+      "gasolineChange": 255,
+      "dieselChange": 245,
+      "direction": "up"
+    },
+    {
+      "date": "2015-06-08",
+      "effective": "2015-06-09",
+      "gasolinePrice": 7235,
+      "dieselPrice": 6255,
+      "gasolineChange": -110,
+      "dieselChange": -105,
+      "direction": "down"
+    },
+    {
+      "date": "2015-07-07",
+      "effective": "2015-07-08",
+      "gasolinePrice": 7140,
+      "dieselPrice": 6165,
+      "gasolineChange": -95,
+      "dieselChange": -90,
+      "direction": "down"
+    },
+    {
+      "date": "2015-07-21",
+      "effective": "2015-07-22",
+      "gasolinePrice": 6875,
+      "dieselPrice": 5900,
+      "gasolineChange": -265,
+      "dieselChange": -265,
+      "direction": "down"
+    },
+    {
+      "date": "2015-08-04",
+      "effective": "2015-08-05",
+      "gasolinePrice": 6655,
+      "dieselPrice": 5685,
+      "gasolineChange": -220,
+      "dieselChange": -215,
+      "direction": "down"
+    },
+    {
+      "date": "2015-08-18",
+      "effective": "2015-08-19",
+      "gasolinePrice": 6445,
+      "dieselPrice": 5480,
+      "gasolineChange": -210,
+      "dieselChange": -205,
+      "direction": "down"
+    },
+    {
+      "date": "2015-09-01",
+      "effective": "2015-09-02",
+      "gasolinePrice": 6320,
+      "dieselPrice": 5360,
+      "gasolineChange": -125,
+      "dieselChange": -120,
+      "direction": "down"
+    },
+    {
+      "date": "2015-09-16",
+      "effective": "2015-09-17",
+      "gasolinePrice": 6410,
+      "dieselPrice": 5450,
+      "gasolineChange": 90,
+      "dieselChange": 90,
+      "direction": "up"
+    },
+    {
+      "date": "2015-10-20",
+      "effective": "2015-10-21",
+      "gasolinePrice": 6460,
+      "dieselPrice": 5500,
+      "gasolineChange": 50,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2015-11-03",
+      "effective": "2015-11-04",
+      "gasolinePrice": 6335,
+      "dieselPrice": 5375,
+      "gasolineChange": -125,
+      "dieselChange": -125,
+      "direction": "down"
+    },
+    {
+      "date": "2015-11-17",
+      "effective": "2015-11-18",
+      "gasolinePrice": 6250,
+      "dieselPrice": 5295,
+      "gasolineChange": -85,
+      "dieselChange": -80,
+      "direction": "down"
+    },
+    {
+      "date": "2015-12-01",
+      "effective": "2015-12-02",
+      "gasolinePrice": 6105,
+      "dieselPrice": 5155,
+      "gasolineChange": -145,
+      "dieselChange": -140,
+      "direction": "down"
+    },
+    {
+      "date": "2016-01-13",
+      "effective": "2016-01-14",
+      "gasolinePrice": 5965,
+      "dieselPrice": 5020,
+      "gasolineChange": -140,
+      "dieselChange": -135,
+      "direction": "down"
+    },
+    {
+      "date": "2016-04-26",
+      "effective": "2016-04-27",
+      "gasolinePrice": 6130,
+      "dieselPrice": 5180,
+      "gasolineChange": 165,
+      "dieselChange": 160,
+      "direction": "up"
+    },
+    {
+      "date": "2016-05-11",
+      "effective": "2016-05-12",
+      "gasolinePrice": 6250,
+      "dieselPrice": 5295,
+      "gasolineChange": 120,
+      "dieselChange": 115,
+      "direction": "up"
+    },
+    {
+      "date": "2016-05-25",
+      "effective": "2016-05-26",
+      "gasolinePrice": 6460,
+      "dieselPrice": 5495,
+      "gasolineChange": 210,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2016-06-08",
+      "effective": "2016-06-09",
+      "gasolinePrice": 6570,
+      "dieselPrice": 5605,
+      "gasolineChange": 110,
+      "dieselChange": 110,
+      "direction": "up"
+    },
+    {
+      "date": "2016-07-21",
+      "effective": "2016-07-22",
+      "gasolinePrice": 6415,
+      "dieselPrice": 5455,
+      "gasolineChange": -155,
+      "dieselChange": -150,
+      "direction": "down"
+    },
+    {
+      "date": "2016-08-04",
+      "effective": "2016-08-05",
+      "gasolinePrice": 6195,
+      "dieselPrice": 5240,
+      "gasolineChange": -220,
+      "dieselChange": -215,
+      "direction": "down"
+    },
+    {
+      "date": "2016-08-18",
+      "effective": "2016-08-19",
+      "gasolinePrice": 6370,
+      "dieselPrice": 5410,
+      "gasolineChange": 175,
+      "dieselChange": 170,
+      "direction": "up"
+    },
+    {
+      "date": "2016-09-01",
+      "effective": "2016-09-02",
+      "gasolinePrice": 6575,
+      "dieselPrice": 5610,
+      "gasolineChange": 205,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2016-09-18",
+      "effective": "2016-09-19",
+      "gasolinePrice": 6420,
+      "dieselPrice": 5460,
+      "gasolineChange": -155,
+      "dieselChange": -150,
+      "direction": "down"
+    },
+    {
+      "date": "2016-10-19",
+      "effective": "2016-10-20",
+      "gasolinePrice": 6775,
+      "dieselPrice": 5800,
+      "gasolineChange": 355,
+      "dieselChange": 340,
+      "direction": "up"
+    },
+    {
+      "date": "2016-11-16",
+      "effective": "2016-11-17",
+      "gasolinePrice": 6410,
+      "dieselPrice": 5445,
+      "gasolineChange": -365,
+      "dieselChange": -355,
+      "direction": "down"
+    },
+    {
+      "date": "2016-11-30",
+      "effective": "2016-12-01",
+      "gasolinePrice": 6585,
+      "dieselPrice": 5615,
+      "gasolineChange": 175,
+      "dieselChange": 170,
+      "direction": "up"
+    },
+    {
+      "date": "2016-12-14",
+      "effective": "2016-12-15",
+      "gasolinePrice": 7020,
+      "dieselPrice": 6035,
+      "gasolineChange": 435,
+      "dieselChange": 420,
+      "direction": "up"
+    },
+    {
+      "date": "2016-12-28",
+      "effective": "2016-12-29",
+      "gasolinePrice": 7120,
+      "dieselPrice": 6130,
+      "gasolineChange": 100,
+      "dieselChange": 95,
+      "direction": "up"
+    },
+    {
+      "date": "2017-01-12",
+      "effective": "2017-01-13",
+      "gasolinePrice": 7360,
+      "dieselPrice": 6630,
+      "gasolineChange": 240,
+      "dieselChange": 500,
+      "direction": "up"
+    },
+    {
+      "date": "2017-01-25",
+      "effective": "2017-01-26",
+      "gasolinePrice": 7290,
+      "dieselPrice": 6290,
+      "gasolineChange": -70,
+      "dieselChange": -340,
+      "direction": "down"
+    },
+    {
+      "date": "2017-02-14",
+      "effective": "2017-02-15",
+      "gasolinePrice": 7340,
+      "dieselPrice": 6340,
+      "gasolineChange": 50,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2017-03-14",
+      "effective": "2017-03-15",
+      "gasolinePrice": 7255,
+      "dieselPrice": 6255,
+      "gasolineChange": -85,
+      "dieselChange": -85,
+      "direction": "down"
+    },
+    {
+      "date": "2017-03-28",
+      "effective": "2017-03-29",
+      "gasolinePrice": 7025,
+      "dieselPrice": 6035,
+      "gasolineChange": -230,
+      "dieselChange": -220,
+      "direction": "down"
+    },
+    {
+      "date": "2017-04-12",
+      "effective": "2017-04-13",
+      "gasolinePrice": 7225,
+      "dieselPrice": 6225,
+      "gasolineChange": 200,
+      "dieselChange": 190,
+      "direction": "up"
+    },
+    {
+      "date": "2017-05-11",
+      "effective": "2017-05-12",
+      "gasolinePrice": 6975,
+      "dieselPrice": 5990,
+      "gasolineChange": -250,
+      "dieselChange": -235,
+      "direction": "down"
+    },
+    {
+      "date": "2017-05-25",
+      "effective": "2017-05-26",
+      "gasolinePrice": 7115,
+      "dieselPrice": 6125,
+      "gasolineChange": 140,
+      "dieselChange": 135,
+      "direction": "up"
+    },
+    {
+      "date": "2017-06-09",
+      "effective": "2017-06-10",
+      "gasolinePrice": 6935,
+      "dieselPrice": 5950,
+      "gasolineChange": -180,
+      "dieselChange": -175,
+      "direction": "down"
+    },
+    {
+      "date": "2017-06-23",
+      "effective": "2017-06-24",
+      "gasolinePrice": 6685,
+      "dieselPrice": 5710,
+      "gasolineChange": -250,
+      "dieselChange": -240,
+      "direction": "down"
+    },
+    {
+      "date": "2017-07-21",
+      "effective": "2017-07-22",
+      "gasolinePrice": 6760,
+      "dieselPrice": 5785,
+      "gasolineChange": 75,
+      "dieselChange": 75,
+      "direction": "up"
+    },
+    {
+      "date": "2017-08-04",
+      "effective": "2017-08-05",
+      "gasolinePrice": 6935,
+      "dieselPrice": 5950,
+      "gasolineChange": 175,
+      "dieselChange": 165,
+      "direction": "up"
+    },
+    {
+      "date": "2017-09-15",
+      "effective": "2017-09-16",
+      "gasolinePrice": 7030,
+      "dieselPrice": 6045,
+      "gasolineChange": 95,
+      "dieselChange": 95,
+      "direction": "up"
+    },
+    {
+      "date": "2017-09-29",
+      "effective": "2017-09-30",
+      "gasolinePrice": 7240,
+      "dieselPrice": 6240,
+      "gasolineChange": 210,
+      "dieselChange": 195,
+      "direction": "up"
+    },
+    {
+      "date": "2017-11-02",
+      "effective": "2017-11-03",
+      "gasolinePrice": 7390,
+      "dieselPrice": 6390,
+      "gasolineChange": 150,
+      "dieselChange": 150,
+      "direction": "up"
+    },
+    {
+      "date": "2017-11-16",
+      "effective": "2017-11-17",
+      "gasolinePrice": 7655,
+      "dieselPrice": 6640,
+      "gasolineChange": 265,
+      "dieselChange": 250,
+      "direction": "up"
+    },
+    {
+      "date": "2017-12-28",
+      "effective": "2017-12-29",
+      "gasolinePrice": 7725,
+      "dieselPrice": 6710,
+      "gasolineChange": 70,
+      "dieselChange": 70,
+      "direction": "up"
+    },
+    {
+      "date": "2018-01-12",
+      "effective": "2018-01-13",
+      "gasolinePrice": 7905,
+      "dieselPrice": 6885,
+      "gasolineChange": 180,
+      "dieselChange": 175,
+      "direction": "up"
+    },
+    {
+      "date": "2018-01-26",
+      "effective": "2018-01-27",
+      "gasolinePrice": 7970,
+      "dieselPrice": 6945,
+      "gasolineChange": 65,
+      "dieselChange": 60,
+      "direction": "up"
+    },
+    {
+      "date": "2018-02-09",
+      "effective": "2018-02-10",
+      "gasolinePrice": 7800,
+      "dieselPrice": 6785,
+      "gasolineChange": -170,
+      "dieselChange": -160,
+      "direction": "down"
+    },
+    {
+      "date": "2018-02-28",
+      "effective": "2018-03-01",
+      "gasolinePrice": 7610,
+      "dieselPrice": 6600,
+      "gasolineChange": -190,
+      "dieselChange": -185,
+      "direction": "down"
+    },
+    {
+      "date": "2018-03-28",
+      "effective": "2018-03-29",
+      "gasolinePrice": 7780,
+      "dieselPrice": 6765,
+      "gasolineChange": 170,
+      "dieselChange": 165,
+      "direction": "up"
+    },
+    {
+      "date": "2018-04-12",
+      "effective": "2018-04-13",
+      "gasolinePrice": 7835,
+      "dieselPrice": 6815,
+      "gasolineChange": 55,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2018-04-26",
+      "effective": "2018-04-27",
+      "gasolinePrice": 8090,
+      "dieselPrice": 7060,
+      "gasolineChange": 255,
+      "dieselChange": 245,
+      "direction": "up"
+    },
+    {
+      "date": "2018-05-11",
+      "effective": "2018-05-12",
+      "gasolinePrice": 8190,
+      "dieselPrice": 7165,
+      "gasolineChange": 100,
+      "dieselChange": 105,
+      "direction": "up"
+    },
+    {
+      "date": "2018-05-25",
+      "effective": "2018-05-26",
+      "gasolinePrice": 8450,
+      "dieselPrice": 7415,
+      "gasolineChange": 260,
+      "dieselChange": 250,
+      "direction": "up"
+    },
+    {
+      "date": "2018-06-08",
+      "effective": "2018-06-09",
+      "gasolinePrice": 8320,
+      "dieselPrice": 7290,
+      "gasolineChange": -130,
+      "dieselChange": -125,
+      "direction": "down"
+    },
+    {
+      "date": "2018-06-25",
+      "effective": "2018-06-26",
+      "gasolinePrice": 8265,
+      "dieselPrice": 7235,
+      "gasolineChange": -55,
+      "dieselChange": -55,
+      "direction": "down"
+    },
+    {
+      "date": "2018-07-09",
+      "effective": "2018-07-10",
+      "gasolinePrice": 8535,
+      "dieselPrice": 7495,
+      "gasolineChange": 270,
+      "dieselChange": 260,
+      "direction": "up"
+    },
+    {
+      "date": "2018-07-23",
+      "effective": "2018-07-24",
+      "gasolinePrice": 8410,
+      "dieselPrice": 7375,
+      "gasolineChange": -125,
+      "dieselChange": -120,
+      "direction": "down"
+    },
+    {
+      "date": "2018-08-06",
+      "effective": "2018-08-07",
+      "gasolinePrice": 8480,
+      "dieselPrice": 7445,
+      "gasolineChange": 70,
+      "dieselChange": 70,
+      "direction": "up"
+    },
+    {
+      "date": "2018-08-20",
+      "effective": "2018-08-21",
+      "gasolinePrice": 8430,
+      "dieselPrice": 7395,
+      "gasolineChange": -50,
+      "dieselChange": -50,
+      "direction": "down"
+    },
+    {
+      "date": "2018-09-03",
+      "effective": "2018-09-04",
+      "gasolinePrice": 8610,
+      "dieselPrice": 7565,
+      "gasolineChange": 180,
+      "dieselChange": 170,
+      "direction": "up"
+    },
+    {
+      "date": "2018-09-17",
+      "effective": "2018-09-18",
+      "gasolinePrice": 8755,
+      "dieselPrice": 7710,
+      "gasolineChange": 145,
+      "dieselChange": 145,
+      "direction": "up"
+    },
+    {
+      "date": "2018-09-30",
+      "effective": "2018-10-01",
+      "gasolinePrice": 8995,
+      "dieselPrice": 7940,
+      "gasolineChange": 240,
+      "dieselChange": 230,
+      "direction": "up"
+    },
+    {
+      "date": "2018-10-19",
+      "effective": "2018-10-20",
+      "gasolinePrice": 9160,
+      "dieselPrice": 8100,
+      "gasolineChange": 165,
+      "dieselChange": 160,
+      "direction": "up"
+    },
+    {
+      "date": "2018-11-02",
+      "effective": "2018-11-03",
+      "gasolinePrice": 8785,
+      "dieselPrice": 7735,
+      "gasolineChange": -375,
+      "dieselChange": -365,
+      "direction": "down"
+    },
+    {
+      "date": "2018-11-16",
+      "effective": "2018-11-17",
+      "gasolinePrice": 8275,
+      "dieselPrice": 7245,
+      "gasolineChange": -510,
+      "dieselChange": -490,
+      "direction": "down"
+    },
+    {
+      "date": "2018-11-30",
+      "effective": "2018-12-01",
+      "gasolinePrice": 7735,
+      "dieselPrice": 6725,
+      "gasolineChange": -540,
+      "dieselChange": -520,
+      "direction": "down"
+    },
+    {
+      "date": "2018-12-14",
+      "effective": "2018-12-15",
+      "gasolinePrice": 7610,
+      "dieselPrice": 6605,
+      "gasolineChange": -125,
+      "dieselChange": -120,
+      "direction": "down"
+    },
+    {
+      "date": "2018-12-28",
+      "effective": "2018-12-29",
+      "gasolinePrice": 7240,
+      "dieselPrice": 6250,
+      "gasolineChange": -370,
+      "dieselChange": -355,
+      "direction": "down"
+    },
+    {
+      "date": "2019-01-14",
+      "effective": "2019-01-15",
+      "gasolinePrice": 7345,
+      "dieselPrice": 6355,
+      "gasolineChange": 105,
+      "dieselChange": 105,
+      "direction": "up"
+    },
+    {
+      "date": "2019-01-28",
+      "effective": "2019-01-29",
+      "gasolinePrice": 7590,
+      "dieselPrice": 6585,
+      "gasolineChange": 245,
+      "dieselChange": 230,
+      "direction": "up"
+    },
+    {
+      "date": "2019-02-14",
+      "effective": "2019-02-15",
+      "gasolinePrice": 7640,
+      "dieselPrice": 6635,
+      "gasolineChange": 50,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2019-02-28",
+      "effective": "2019-03-01",
+      "gasolinePrice": 7910,
+      "dieselPrice": 6895,
+      "gasolineChange": 270,
+      "dieselChange": 260,
+      "direction": "up"
+    },
+    {
+      "date": "2019-03-28",
+      "effective": "2019-03-29",
+      "gasolinePrice": 7990,
+      "dieselPrice": 6975,
+      "gasolineChange": 80,
+      "dieselChange": 80,
+      "direction": "up"
+    },
+    {
+      "date": "2019-04-12",
+      "effective": "2019-04-13",
+      "gasolinePrice": 7940,
+      "dieselPrice": 6945,
+      "gasolineChange": -50,
+      "dieselChange": -30,
+      "direction": "down"
+    },
+    {
+      "date": "2019-04-26",
+      "effective": "2019-04-27",
+      "gasolinePrice": 8135,
+      "dieselPrice": 7130,
+      "gasolineChange": 195,
+      "dieselChange": 185,
+      "direction": "up"
+    },
+    {
+      "date": "2019-05-13",
+      "effective": "2019-05-14",
+      "gasolinePrice": 8060,
+      "dieselPrice": 7055,
+      "gasolineChange": -75,
+      "dieselChange": -75,
+      "direction": "down"
+    },
+    {
+      "date": "2019-05-27",
+      "effective": "2019-05-28",
+      "gasolinePrice": 8110,
+      "dieselPrice": 7105,
+      "gasolineChange": 50,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2019-06-11",
+      "effective": "2019-06-12",
+      "gasolinePrice": 7645,
+      "dieselPrice": 6660,
+      "gasolineChange": -465,
+      "dieselChange": -445,
+      "direction": "down"
+    },
+    {
+      "date": "2019-06-25",
+      "effective": "2019-06-26",
+      "gasolinePrice": 7525,
+      "dieselPrice": 6545,
+      "gasolineChange": -120,
+      "dieselChange": -115,
+      "direction": "down"
+    },
+    {
+      "date": "2019-07-09",
+      "effective": "2019-07-10",
+      "gasolinePrice": 7675,
+      "dieselPrice": 6685,
+      "gasolineChange": 150,
+      "dieselChange": 140,
+      "direction": "up"
+    },
+    {
+      "date": "2019-08-06",
+      "effective": "2019-08-07",
+      "gasolinePrice": 7595,
+      "dieselPrice": 6615,
+      "gasolineChange": -80,
+      "dieselChange": -70,
+      "direction": "down"
+    },
+    {
+      "date": "2019-08-20",
+      "effective": "2019-08-21",
+      "gasolinePrice": 7385,
+      "dieselPrice": 6410,
+      "gasolineChange": -210,
+      "dieselChange": -205,
+      "direction": "down"
+    },
+    {
+      "date": "2019-09-03",
+      "effective": "2019-09-04",
+      "gasolinePrice": 7500,
+      "dieselPrice": 6515,
+      "gasolineChange": 115,
+      "dieselChange": 105,
+      "direction": "up"
+    },
+    {
+      "date": "2019-09-18",
+      "effective": "2019-09-19",
+      "gasolinePrice": 7625,
+      "dieselPrice": 6640,
+      "gasolineChange": 125,
+      "dieselChange": 125,
+      "direction": "up"
+    },
+    {
+      "date": "2019-10-21",
+      "effective": "2019-10-22",
+      "gasolinePrice": 7475,
+      "dieselPrice": 6495,
+      "gasolineChange": -150,
+      "dieselChange": -145,
+      "direction": "down"
+    },
+    {
+      "date": "2019-11-04",
+      "effective": "2019-11-05",
+      "gasolinePrice": 7580,
+      "dieselPrice": 6600,
+      "gasolineChange": 105,
+      "dieselChange": 105,
+      "direction": "up"
+    },
+    {
+      "date": "2019-11-18",
+      "effective": "2019-11-19",
+      "gasolinePrice": 7650,
+      "dieselPrice": 6665,
+      "gasolineChange": 70,
+      "dieselChange": 65,
+      "direction": "up"
+    },
+    {
+      "date": "2019-12-02",
+      "effective": "2019-12-03",
+      "gasolinePrice": 7705,
+      "dieselPrice": 6715,
+      "gasolineChange": 55,
+      "dieselChange": 50,
+      "direction": "up"
+    },
+    {
+      "date": "2019-12-30",
+      "effective": "2019-12-31",
+      "gasolinePrice": 7940,
+      "dieselPrice": 6945,
+      "gasolineChange": 235,
+      "dieselChange": 230,
+      "direction": "up"
+    },
+    {
+      "date": "2020-02-04",
+      "effective": "2020-02-05",
+      "gasolinePrice": 7520,
+      "dieselPrice": 6540,
+      "gasolineChange": -420,
+      "dieselChange": -405,
+      "direction": "down"
+    },
+    {
+      "date": "2020-02-18",
+      "effective": "2020-02-19",
+      "gasolinePrice": 7105,
+      "dieselPrice": 6140,
+      "gasolineChange": -415,
+      "dieselChange": -400,
+      "direction": "down"
+    },
+    {
+      "date": "2020-03-17",
+      "effective": "2020-03-18",
+      "gasolinePrice": 6090,
+      "dieselPrice": 5165,
+      "gasolineChange": -1015,
+      "dieselChange": -975,
+      "direction": "down"
+    },
+    {
+      "date": "2020-06-28",
+      "effective": "2020-06-29",
+      "gasolinePrice": 6210,
+      "dieselPrice": 5275,
+      "gasolineChange": 120,
+      "dieselChange": 110,
+      "direction": "up"
+    },
+    {
+      "date": "2020-07-10",
+      "effective": "2020-07-11",
+      "gasolinePrice": 6310,
+      "dieselPrice": 5375,
+      "gasolineChange": 100,
+      "dieselChange": 100,
+      "direction": "up"
+    },
+    {
+      "date": "2020-08-21",
+      "effective": "2020-08-22",
+      "gasolinePrice": 6395,
+      "dieselPrice": 5455,
+      "gasolineChange": 85,
+      "dieselChange": 80,
+      "direction": "up"
+    },
+    {
+      "date": "2020-09-18",
+      "effective": "2020-09-19",
+      "gasolinePrice": 6080,
+      "dieselPrice": 5155,
+      "gasolineChange": -315,
+      "dieselChange": -300,
+      "direction": "down"
+    },
+    {
+      "date": "2020-10-22",
+      "effective": "2020-10-23",
+      "gasolinePrice": 6160,
+      "dieselPrice": 5225,
+      "gasolineChange": 80,
+      "dieselChange": 70,
+      "direction": "up"
+    },
+    {
+      "date": "2020-11-05",
+      "effective": "2020-11-06",
+      "gasolinePrice": 6000,
+      "dieselPrice": 5075,
+      "gasolineChange": -160,
+      "dieselChange": -150,
+      "direction": "down"
+    },
+    {
+      "date": "2020-11-19",
+      "effective": "2020-11-20",
+      "gasolinePrice": 6150,
+      "dieselPrice": 5220,
+      "gasolineChange": 150,
+      "dieselChange": 145,
+      "direction": "up"
+    },
+    {
+      "date": "2020-12-03",
+      "effective": "2020-12-04",
+      "gasolinePrice": 6400,
+      "dieselPrice": 5460,
+      "gasolineChange": 250,
+      "dieselChange": 240,
+      "direction": "up"
+    },
+    {
+      "date": "2020-12-17",
+      "effective": "2020-12-18",
+      "gasolinePrice": 6555,
+      "dieselPrice": 5610,
+      "gasolineChange": 155,
+      "dieselChange": 150,
+      "direction": "up"
+    },
+    {
+      "date": "2020-12-31",
+      "effective": "2021-01-01",
+      "gasolinePrice": 6645,
+      "dieselPrice": 5695,
+      "gasolineChange": 90,
+      "dieselChange": 85,
+      "direction": "up"
+    },
+    {
+      "date": "2021-01-15",
+      "effective": "2021-01-16",
+      "gasolinePrice": 6830,
+      "dieselPrice": 5875,
+      "gasolineChange": 185,
+      "dieselChange": 180,
+      "direction": "up"
+    },
+    {
+      "date": "2021-01-29",
+      "effective": "2021-01-30",
+      "gasolinePrice": 6905,
+      "dieselPrice": 5945,
+      "gasolineChange": 75,
+      "dieselChange": 70,
+      "direction": "up"
+    },
+    {
+      "date": "2021-02-18",
+      "effective": "2021-02-19",
+      "gasolinePrice": 7180,
+      "dieselPrice": 6210,
+      "gasolineChange": 275,
+      "dieselChange": 265,
+      "direction": "up"
+    },
+    {
+      "date": "2021-03-03",
+      "effective": "2021-03-04",
+      "gasolinePrice": 7440,
+      "dieselPrice": 6460,
+      "gasolineChange": 260,
+      "dieselChange": 250,
+      "direction": "up"
+    },
+    {
+      "date": "2021-03-17",
+      "effective": "2021-03-18",
+      "gasolinePrice": 7675,
+      "dieselPrice": 6690,
+      "gasolineChange": 235,
+      "dieselChange": 230,
+      "direction": "up"
+    },
+    {
+      "date": "2021-03-31",
+      "effective": "2021-04-01",
+      "gasolinePrice": 7450,
+      "dieselPrice": 6470,
+      "gasolineChange": -225,
+      "dieselChange": -220,
+      "direction": "down"
+    },
+    {
+      "date": "2021-04-28",
+      "effective": "2021-04-29",
+      "gasolinePrice": 7550,
+      "dieselPrice": 6565,
+      "gasolineChange": 100,
+      "dieselChange": 95,
+      "direction": "up"
+    },
+    {
+      "date": "2021-05-14",
+      "effective": "2021-05-15",
+      "gasolinePrice": 7650,
+      "dieselPrice": 6665,
+      "gasolineChange": 100,
+      "dieselChange": 100,
+      "direction": "up"
+    },
+    {
+      "date": "2021-06-11",
+      "effective": "2021-06-12",
+      "gasolinePrice": 7825,
+      "dieselPrice": 6835,
+      "gasolineChange": 175,
+      "dieselChange": 170,
+      "direction": "up"
+    },
+    {
+      "date": "2021-06-28",
+      "effective": "2021-06-29",
+      "gasolinePrice": 8050,
+      "dieselPrice": 7050,
+      "gasolineChange": 225,
+      "dieselChange": 215,
+      "direction": "up"
+    },
+    {
+      "date": "2021-07-12",
+      "effective": "2021-07-13",
+      "gasolinePrice": 8120,
+      "dieselPrice": 7115,
+      "gasolineChange": 70,
+      "dieselChange": 65,
+      "direction": "up"
+    },
+    {
+      "date": "2021-07-26",
+      "effective": "2021-07-27",
+      "gasolinePrice": 8020,
+      "dieselPrice": 7020,
+      "gasolineChange": -100,
+      "dieselChange": -95,
+      "direction": "down"
+    },
+    {
+      "date": "2021-08-23",
+      "effective": "2021-08-24",
+      "gasolinePrice": 7770,
+      "dieselPrice": 6775,
+      "gasolineChange": -250,
+      "dieselChange": -245,
+      "direction": "down"
+    },
+    {
+      "date": "2021-09-06",
+      "effective": "2021-09-07",
+      "gasolinePrice": 7910,
+      "dieselPrice": 6915,
+      "gasolineChange": 140,
+      "dieselChange": 140,
+      "direction": "up"
+    },
+    {
+      "date": "2021-09-18",
+      "effective": "2021-09-19",
+      "gasolinePrice": 8000,
+      "dieselPrice": 7000,
+      "gasolineChange": 90,
+      "dieselChange": 85,
+      "direction": "up"
+    },
+    {
+      "date": "2021-10-09",
+      "effective": "2021-10-10",
+      "gasolinePrice": 8345,
+      "dieselPrice": 7330,
+      "gasolineChange": 345,
+      "dieselChange": 330,
+      "direction": "up"
+    },
+    {
+      "date": "2021-10-22",
+      "effective": "2021-10-23",
+      "gasolinePrice": 8645,
+      "dieselPrice": 7620,
+      "gasolineChange": 300,
+      "dieselChange": 290,
+      "direction": "up"
+    },
+    {
+      "date": "2021-11-19",
+      "effective": "2021-11-20",
+      "gasolinePrice": 8550,
+      "dieselPrice": 7530,
+      "gasolineChange": -95,
+      "dieselChange": -90,
+      "direction": "down"
+    },
+    {
+      "date": "2021-12-03",
+      "effective": "2021-12-04",
+      "gasolinePrice": 8120,
+      "dieselPrice": 7115,
+      "gasolineChange": -430,
+      "dieselChange": -415,
+      "direction": "down"
+    },
+    {
+      "date": "2021-12-17",
+      "effective": "2021-12-18",
+      "gasolinePrice": 7990,
+      "dieselPrice": 6990,
+      "gasolineChange": -130,
+      "dieselChange": -125,
+      "direction": "down"
+    },
+    {
+      "date": "2021-12-31",
+      "effective": "2022-01-01",
+      "gasolinePrice": 8130,
+      "dieselPrice": 7125,
+      "gasolineChange": 140,
+      "dieselChange": 135,
+      "direction": "up"
+    },
+    {
+      "date": "2022-01-17",
+      "effective": "2022-01-18",
+      "gasolinePrice": 8475,
+      "dieselPrice": 7455,
+      "gasolineChange": 345,
+      "dieselChange": 330,
+      "direction": "up"
+    },
+    {
+      "date": "2022-01-29",
+      "effective": "2022-01-30",
+      "gasolinePrice": 8785,
+      "dieselPrice": 7755,
+      "gasolineChange": 310,
+      "dieselChange": 300,
+      "direction": "up"
+    },
+    {
+      "date": "2022-02-17",
+      "effective": "2022-02-18",
+      "gasolinePrice": 8995,
+      "dieselPrice": 7955,
+      "gasolineChange": 210,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2022-03-03",
+      "effective": "2022-03-04",
+      "gasolinePrice": 9255,
+      "dieselPrice": 8210,
+      "gasolineChange": 260,
+      "dieselChange": 255,
+      "direction": "up"
+    },
+    {
+      "date": "2022-03-17",
+      "effective": "2022-03-18",
+      "gasolinePrice": 10005,
+      "dieselPrice": 8930,
+      "gasolineChange": 750,
+      "dieselChange": 720,
+      "direction": "up"
+    },
+    {
+      "date": "2022-03-31",
+      "effective": "2022-04-01",
+      "gasolinePrice": 10115,
+      "dieselPrice": 9040,
+      "gasolineChange": 110,
+      "dieselChange": 110,
+      "direction": "up"
+    },
+    {
+      "date": "2022-04-15",
+      "effective": "2022-04-16",
+      "gasolinePrice": 9570,
+      "dieselPrice": 8510,
+      "gasolineChange": -545,
+      "dieselChange": -530,
+      "direction": "down"
+    },
+    {
+      "date": "2022-04-28",
+      "effective": "2022-04-29",
+      "gasolinePrice": 9775,
+      "dieselPrice": 8710,
+      "gasolineChange": 205,
+      "dieselChange": 200,
+      "direction": "up"
+    },
+    {
+      "date": "2022-05-16",
+      "effective": "2022-05-17",
+      "gasolinePrice": 10060,
+      "dieselPrice": 8980,
+      "gasolineChange": 285,
+      "dieselChange": 270,
+      "direction": "up"
+    },
+    {
+      "date": "2022-05-30",
+      "effective": "2022-05-31",
+      "gasolinePrice": 10460,
+      "dieselPrice": 9370,
+      "gasolineChange": 400,
+      "dieselChange": 390,
+      "direction": "up"
+    },
+    {
+      "date": "2022-06-14",
+      "effective": "2022-06-15",
+      "gasolinePrice": 10850,
+      "dieselPrice": 9745,
+      "gasolineChange": 390,
+      "dieselChange": 375,
+      "direction": "up"
+    },
+    {
+      "date": "2022-06-28",
+      "effective": "2022-06-29",
+      "gasolinePrice": 10530,
+      "dieselPrice": 9435,
+      "gasolineChange": -320,
+      "dieselChange": -310,
+      "direction": "down"
+    },
+    {
+      "date": "2022-07-12",
+      "effective": "2022-07-13",
+      "gasolinePrice": 10170,
+      "dieselPrice": 9090,
+      "gasolineChange": -360,
+      "dieselChange": -345,
+      "direction": "down"
+    },
+    {
+      "date": "2022-07-26",
+      "effective": "2022-07-27",
+      "gasolinePrice": 9870,
+      "dieselPrice": 8800,
+      "gasolineChange": -300,
+      "dieselChange": -290,
+      "direction": "down"
+    },
+    {
+      "date": "2022-08-09",
+      "effective": "2022-08-10",
+      "gasolinePrice": 9740,
+      "dieselPrice": 8675,
+      "gasolineChange": -130,
+      "dieselChange": -125,
+      "direction": "down"
+    },
+    {
+      "date": "2022-08-23",
+      "effective": "2022-08-24",
+      "gasolinePrice": 9535,
+      "dieselPrice": 8475,
+      "gasolineChange": -205,
+      "dieselChange": -200,
+      "direction": "down"
+    },
+    {
+      "date": "2022-09-06",
+      "effective": "2022-09-07",
+      "gasolinePrice": 9725,
+      "dieselPrice": 8660,
+      "gasolineChange": 190,
+      "dieselChange": 185,
+      "direction": "up"
+    },
+    {
+      "date": "2022-09-21",
+      "effective": "2022-09-22",
+      "gasolinePrice": 9435,
+      "dieselPrice": 8380,
+      "gasolineChange": -290,
+      "dieselChange": -280,
+      "direction": "down"
+    },
+    {
+      "date": "2022-10-24",
+      "effective": "2022-10-25",
+      "gasolinePrice": 9620,
+      "dieselPrice": 8555,
+      "gasolineChange": 185,
+      "dieselChange": 175,
+      "direction": "up"
+    },
+    {
+      "date": "2022-11-07",
+      "effective": "2022-11-08",
+      "gasolinePrice": 9775,
+      "dieselPrice": 8705,
+      "gasolineChange": 155,
+      "dieselChange": 150,
+      "direction": "up"
+    },
+    {
+      "date": "2022-11-21",
+      "effective": "2022-11-22",
+      "gasolinePrice": 9600,
+      "dieselPrice": 8540,
+      "gasolineChange": -175,
+      "dieselChange": -165,
+      "direction": "down"
+    },
+    {
+      "date": "2022-12-05",
+      "effective": "2022-12-06",
+      "gasolinePrice": 9160,
+      "dieselPrice": 8115,
+      "gasolineChange": -440,
+      "dieselChange": -425,
+      "direction": "down"
+    },
+    {
+      "date": "2022-12-19",
+      "effective": "2022-12-20",
+      "gasolinePrice": 8680,
+      "dieselPrice": 7655,
+      "gasolineChange": -480,
+      "dieselChange": -460,
+      "direction": "down"
+    },
+    {
+      "date": "2023-01-03",
+      "effective": "2023-01-04",
+      "gasolinePrice": 8930,
+      "dieselPrice": 7895,
+      "gasolineChange": 250,
+      "dieselChange": 240,
+      "direction": "up"
+    },
+    {
+      "date": "2023-01-17",
+      "effective": "2023-01-18",
+      "gasolinePrice": 8725,
+      "dieselPrice": 7700,
+      "gasolineChange": -205,
+      "dieselChange": -195,
+      "direction": "down"
+    },
+    {
+      "date": "2023-02-03",
+      "effective": "2023-02-04",
+      "gasolinePrice": 8935,
+      "dieselPrice": 7900,
+      "gasolineChange": 210,
+      "dieselChange": 200,
+      "direction": "up"
     },
     {
       "date": "2023-03-17",
-      "title": "2023年3月17日24时起国内成品油价格按机制下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230317_1351325.html",
-      "status": "adjusted",
+      "effective": "2023-03-18",
+      "gasolinePrice": 8835,
+      "dieselPrice": 7805,
+      "gasolineChange": -100,
+      "dieselChange": -95,
       "direction": "down"
     },
     {
       "date": "2023-03-31",
-      "title": "2023年3月31日24时起国内成品油价格按机制下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230331_1353081.html",
-      "status": "adjusted",
+      "effective": "2023-04-01",
+      "gasolinePrice": 8500,
+      "dieselPrice": 7485,
+      "gasolineChange": -335,
+      "dieselChange": -320,
       "direction": "down"
     },
     {
       "date": "2023-04-17",
-      "title": "2023年4月17日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230417_1353648.html",
-      "status": "adjusted",
+      "effective": "2023-04-18",
+      "gasolinePrice": 9050,
+      "dieselPrice": 8010,
+      "gasolineChange": 550,
+      "dieselChange": 525,
       "direction": "up"
     },
     {
       "date": "2023-04-28",
-      "title": "2023年4月28日24时起国内成品油价格按机制下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230428_1355157.html",
-      "status": "adjusted",
+      "effective": "2023-04-29",
+      "gasolinePrice": 8890,
+      "dieselPrice": 7855,
+      "gasolineChange": -160,
+      "dieselChange": -155,
       "direction": "down"
     },
     {
       "date": "2023-05-16",
-      "title": "2023年5月16日24时起国内成品油价格按机制下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230516_1355789.html",
-      "status": "adjusted",
+      "effective": "2023-05-17",
+      "gasolinePrice": 8510,
+      "dieselPrice": 7490,
+      "gasolineChange": -380,
+      "dieselChange": -365,
       "direction": "down"
     },
     {
       "date": "2023-05-30",
-      "title": "2023年5月30日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230530_1356745.html",
-      "status": "adjusted",
+      "effective": "2023-05-31",
+      "gasolinePrice": 8610,
+      "dieselPrice": 7585,
+      "gasolineChange": 100,
+      "dieselChange": 95,
       "direction": "up"
     },
     {
       "date": "2023-06-13",
-      "title": "2023年6月13日24时起国内成品油价格按机制下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230613_1357539.html",
-      "status": "adjusted",
+      "effective": "2023-06-14",
+      "gasolinePrice": 8555,
+      "dieselPrice": 7535,
+      "gasolineChange": -55,
+      "dieselChange": -50,
       "direction": "down"
     },
     {
       "date": "2023-06-28",
-      "title": "2023年6月28日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230628_1357927.html",
-      "status": "adjusted",
+      "effective": "2023-06-29",
+      "gasolinePrice": 8625,
+      "dieselPrice": 7605,
+      "gasolineChange": 70,
+      "dieselChange": 70,
       "direction": "up"
     },
     {
       "date": "2023-07-12",
-      "title": "2023年7月12日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230712_1358334.html",
-      "status": "adjusted",
+      "effective": "2023-07-13",
+      "gasolinePrice": 8780,
+      "dieselPrice": 7755,
+      "gasolineChange": 155,
+      "dieselChange": 150,
       "direction": "up"
     },
     {
       "date": "2023-07-26",
-      "title": "2023年7月26日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230726_1358699.html",
-      "status": "adjusted",
+      "effective": "2023-07-27",
+      "gasolinePrice": 9055,
+      "dieselPrice": 8015,
+      "gasolineChange": 275,
+      "dieselChange": 260,
       "direction": "up"
     },
     {
       "date": "2023-08-09",
-      "title": "2023年8月9日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230809_1359258.html",
-      "status": "adjusted",
+      "effective": "2023-08-10",
+      "gasolinePrice": 9295,
+      "dieselPrice": 8245,
+      "gasolineChange": 240,
+      "dieselChange": 230,
       "direction": "up"
     },
     {
       "date": "2023-08-23",
-      "title": "2023年8月23日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230823_1360025.html",
-      "status": "adjusted",
+      "effective": "2023-08-24",
+      "gasolinePrice": 9350,
+      "dieselPrice": 8300,
+      "gasolineChange": 55,
+      "dieselChange": 55,
       "direction": "up"
-    },
-    {
-      "date": "2023-09-06",
-      "title": "2023年9月6日国内成品油价格不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230906_1360397.html",
-      "status": "unchanged",
-      "direction": "none"
     },
     {
       "date": "2023-09-20",
-      "title": "2023年9月20日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230920_1360717.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-10-10",
-      "title": "2023年10月10日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231010_1361121.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-10-24",
-      "title": "2023年10月24日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231024_1361478.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-11-07",
-      "title": "2023年11月7日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231107_1361829.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-11-21",
-      "title": "2023年11月21日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231121_1362158.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-12-05",
-      "title": "2023年12月5日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231205_1362437.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2023-12-19",
-      "title": "2023年12月19日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231219_1362767.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-01-03",
-      "title": "2024年1月3日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240103_1363079.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-01-17",
-      "title": "2024年1月17日24时起国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240117_1363439.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-01-31",
-      "title": "2024年1月31日24时起国内成品油价格按机制上调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240131_1363834.html",
-      "status": "adjusted",
+      "effective": "2023-09-21",
+      "gasolinePrice": 9735,
+      "dieselPrice": 8670,
+      "gasolineChange": 385,
+      "dieselChange": 370,
       "direction": "up"
     },
     {
-      "date": "2024-02-19",
-      "title": "2024年2月19日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202402/t20240219_1364095.html",
-      "status": "unchanged",
-      "direction": "none"
+      "date": "2023-10-10",
+      "effective": "2023-10-11",
+      "gasolinePrice": 9650,
+      "dieselPrice": 8590,
+      "gasolineChange": -85,
+      "dieselChange": -80,
+      "direction": "down"
+    },
+    {
+      "date": "2023-10-24",
+      "effective": "2023-10-25",
+      "gasolinePrice": 9580,
+      "dieselPrice": 8520,
+      "gasolineChange": -70,
+      "dieselChange": -70,
+      "direction": "down"
+    },
+    {
+      "date": "2023-11-07",
+      "effective": "2023-11-08",
+      "gasolinePrice": 9440,
+      "dieselPrice": 8385,
+      "gasolineChange": -140,
+      "dieselChange": -135,
+      "direction": "down"
+    },
+    {
+      "date": "2023-11-21",
+      "effective": "2023-11-22",
+      "gasolinePrice": 9100,
+      "dieselPrice": 8055,
+      "gasolineChange": -340,
+      "dieselChange": -330,
+      "direction": "down"
+    },
+    {
+      "date": "2023-12-05",
+      "effective": "2023-12-06",
+      "gasolinePrice": 9045,
+      "dieselPrice": 8005,
+      "gasolineChange": -55,
+      "dieselChange": -50,
+      "direction": "down"
+    },
+    {
+      "date": "2023-12-19",
+      "effective": "2023-12-20",
+      "gasolinePrice": 8630,
+      "dieselPrice": 7605,
+      "gasolineChange": -415,
+      "dieselChange": -400,
+      "direction": "down"
+    },
+    {
+      "date": "2024-01-03",
+      "effective": "2024-01-04",
+      "gasolinePrice": 8830,
+      "dieselPrice": 7795,
+      "gasolineChange": 200,
+      "dieselChange": 190,
+      "direction": "up"
+    },
+    {
+      "date": "2024-01-17",
+      "effective": "2024-01-18",
+      "gasolinePrice": 8780,
+      "dieselPrice": 7745,
+      "gasolineChange": -50,
+      "dieselChange": -50,
+      "direction": "down"
+    },
+    {
+      "date": "2024-01-31",
+      "effective": "2024-02-01",
+      "gasolinePrice": 8980,
+      "dieselPrice": 7945,
+      "gasolineChange": 200,
+      "dieselChange": 200,
+      "direction": "up"
     },
     {
       "date": "2024-03-04",
-      "title": "2024年3月4日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240304_1364393.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-03-18",
-      "title": "2024年3月18日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240318_1365046.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2024-03-05",
+      "gasolinePrice": 9105,
+      "dieselPrice": 8065,
+      "gasolineChange": 125,
+      "dieselChange": 120,
+      "direction": "up"
     },
     {
       "date": "2024-04-01",
-      "title": "2024年4月1日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240401_1365388.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-04-02",
+      "gasolinePrice": 9305,
+      "dieselPrice": 8255,
+      "gasolineChange": 200,
+      "dieselChange": 190,
+      "direction": "up"
     },
     {
       "date": "2024-04-16",
-      "title": "国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240416_1365703.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-04-17",
+      "gasolinePrice": 9505,
+      "dieselPrice": 8450,
+      "gasolineChange": 200,
+      "dieselChange": 195,
+      "direction": "up"
     },
     {
       "date": "2024-04-29",
-      "title": "2024年4月29日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240429_1366287.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-04-30",
+      "gasolinePrice": 9435,
+      "dieselPrice": 8380,
+      "gasolineChange": -70,
+      "dieselChange": -70,
+      "direction": "down"
     },
     {
       "date": "2024-05-15",
-      "title": "2024年5月15日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240515_1386222.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-05-29",
-      "title": "2024年5月29日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240529_1386532.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2024-05-16",
+      "gasolinePrice": 9200,
+      "dieselPrice": 8155,
+      "gasolineChange": -235,
+      "dieselChange": -225,
+      "direction": "down"
     },
     {
       "date": "2024-06-13",
-      "title": "2024年6月13日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240613_1386864.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-06-14",
+      "gasolinePrice": 9010,
+      "dieselPrice": 7975,
+      "gasolineChange": -190,
+      "dieselChange": -180,
+      "direction": "down"
     },
     {
       "date": "2024-06-27",
-      "title": "2024年6月27日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240627_1391342.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-06-28",
+      "gasolinePrice": 9220,
+      "dieselPrice": 8175,
+      "gasolineChange": 210,
+      "dieselChange": 200,
+      "direction": "up"
     },
     {
       "date": "2024-07-11",
-      "title": "2024年7月11日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240711_1391617.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-07-12",
+      "gasolinePrice": 9330,
+      "dieselPrice": 8280,
+      "gasolineChange": 110,
+      "dieselChange": 105,
+      "direction": "up"
     },
     {
       "date": "2024-07-25",
-      "title": "2024年7月25日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240725_1391947.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-07-26",
+      "gasolinePrice": 9185,
+      "dieselPrice": 8140,
+      "gasolineChange": -145,
+      "dieselChange": -140,
+      "direction": "down"
     },
     {
       "date": "2024-08-08",
-      "title": "2024年8月8日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240808_1392318.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-08-22",
-      "title": "2024年8月22日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240822_1392530.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2024-08-09",
+      "gasolinePrice": 8880,
+      "dieselPrice": 7850,
+      "gasolineChange": -305,
+      "dieselChange": -290,
+      "direction": "down"
     },
     {
       "date": "2024-09-05",
-      "title": "2024年9月5日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240905_1392834.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-09-06",
+      "gasolinePrice": 8780,
+      "dieselPrice": 7750,
+      "gasolineChange": -100,
+      "dieselChange": -100,
+      "direction": "down"
     },
     {
       "date": "2024-09-20",
-      "title": "2024年9月20日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240920_1393111.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-09-21",
+      "gasolinePrice": 8415,
+      "dieselPrice": 7400,
+      "gasolineChange": -365,
+      "dieselChange": -350,
+      "direction": "down"
     },
     {
       "date": "2024-10-10",
-      "title": "2024年10月10日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241010_1393553.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-10-11",
+      "gasolinePrice": 8555,
+      "dieselPrice": 7535,
+      "gasolineChange": 140,
+      "dieselChange": 135,
+      "direction": "up"
     },
     {
       "date": "2024-10-23",
-      "title": "2024年10月23日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241023_1393865.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2024-10-24",
+      "gasolinePrice": 8645,
+      "dieselPrice": 7620,
+      "gasolineChange": 90,
+      "dieselChange": 85,
+      "direction": "up"
     },
     {
       "date": "2024-11-06",
-      "title": "2024年11月6日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241106_1394298.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2024-11-20",
-      "title": "2024年11月20日国内成品油价格不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241120_1394603.html",
-      "status": "unchanged",
-      "direction": "none"
-    },
-    {
-      "date": "2024-12-04",
-      "title": "2024年12月4日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241204_1394837.html",
-      "status": "unchanged",
-      "direction": "none"
-    },
-    {
-      "date": "2024-12-18",
-      "title": "2024年12月18日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241218_1395064.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2024-11-07",
+      "gasolinePrice": 8500,
+      "dieselPrice": 7480,
+      "gasolineChange": -145,
+      "dieselChange": -140,
+      "direction": "down"
     },
     {
       "date": "2025-01-02",
-      "title": "2025年1月2日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250102_1395423.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-01-03",
+      "gasolinePrice": 8570,
+      "dieselPrice": 7550,
+      "gasolineChange": 70,
+      "dieselChange": 70,
+      "direction": "up"
     },
     {
       "date": "2025-01-16",
-      "title": "2025年1月16日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250116_1395727.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2025-02-06",
-      "title": "2025年2月6日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250206_1396007.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2025-01-17",
+      "gasolinePrice": 8910,
+      "dieselPrice": 7875,
+      "gasolineChange": 340,
+      "dieselChange": 325,
+      "direction": "up"
     },
     {
       "date": "2025-02-19",
-      "title": "2025年2月19日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250219_1396225.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-02-20",
+      "gasolinePrice": 8740,
+      "dieselPrice": 7715,
+      "gasolineChange": -170,
+      "dieselChange": -160,
+      "direction": "down"
     },
     {
       "date": "2025-03-05",
-      "title": "2025年3月5日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250305_1396430.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-03-06",
+      "gasolinePrice": 8605,
+      "dieselPrice": 7585,
+      "gasolineChange": -135,
+      "dieselChange": -130,
+      "direction": "down"
     },
     {
       "date": "2025-03-19",
-      "title": "2025年3月19日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250319_1396715.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-03-20",
+      "gasolinePrice": 8325,
+      "dieselPrice": 7315,
+      "gasolineChange": -280,
+      "dieselChange": -270,
+      "direction": "down"
     },
     {
       "date": "2025-04-02",
-      "title": "2025年4月2日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250402_1396996.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-04-03",
+      "gasolinePrice": 8555,
+      "dieselPrice": 7535,
+      "gasolineChange": 230,
+      "dieselChange": 220,
+      "direction": "up"
     },
     {
       "date": "2025-04-17",
-      "title": "2025年4月17日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250417_1397240.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2025-04-30",
-      "title": "2025年4月30日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250430_1397516.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2025-04-18",
+      "gasolinePrice": 8075,
+      "dieselPrice": 7070,
+      "gasolineChange": -480,
+      "dieselChange": -465,
+      "direction": "down"
     },
     {
       "date": "2025-05-19",
-      "title": "2025年5月19日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202505/t20250519_1397793.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-05-20",
+      "gasolinePrice": 7845,
+      "dieselPrice": 6850,
+      "gasolineChange": -230,
+      "dieselChange": -220,
+      "direction": "down"
     },
     {
       "date": "2025-06-03",
-      "title": "2025年6月3日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250603_1398198.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-06-04",
+      "gasolinePrice": 7910,
+      "dieselPrice": 6910,
+      "gasolineChange": 65,
+      "dieselChange": 60,
+      "direction": "up"
     },
     {
       "date": "2025-06-17",
-      "title": "2025年6月17日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250617_1398486.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-06-18",
+      "gasolinePrice": 8170,
+      "dieselPrice": 7165,
+      "gasolineChange": 260,
+      "dieselChange": 255,
+      "direction": "up"
     },
     {
       "date": "2025-07-01",
-      "title": "2025年7月1日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250701_1398919.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-07-02",
+      "gasolinePrice": 8405,
+      "dieselPrice": 7390,
+      "gasolineChange": 235,
+      "dieselChange": 225,
+      "direction": "up"
     },
     {
       "date": "2025-07-15",
-      "title": "2025年7月15日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250715_1399195.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2025-07-29",
-      "title": "2025年7月29日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250729_1399467.html",
-      "status": "unchanged",
-      "direction": "none"
-    },
-    {
-      "date": "2025-08-12",
-      "title": "2025年8月12日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250812_1399754.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2025-07-16",
+      "gasolinePrice": 8275,
+      "dieselPrice": 7265,
+      "gasolineChange": -130,
+      "dieselChange": -125,
+      "direction": "down"
     },
     {
       "date": "2025-08-26",
-      "title": "2025年8月26日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250826_1400056.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2025-09-09",
-      "title": "2025年9月9日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250909_1400343.html",
-      "status": "unchanged",
-      "direction": "none"
-    },
-    {
-      "date": "2025-09-23",
-      "title": "2025年9月23日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250923_1400624.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2025-08-27",
+      "gasolinePrice": 8095,
+      "dieselPrice": 7090,
+      "gasolineChange": -180,
+      "dieselChange": -175,
+      "direction": "down"
     },
     {
       "date": "2025-10-13",
-      "title": "2025年10月13日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251013_1400937.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-10-14",
+      "gasolinePrice": 8020,
+      "dieselPrice": 7020,
+      "gasolineChange": -75,
+      "dieselChange": -70,
+      "direction": "down"
     },
     {
       "date": "2025-10-27",
-      "title": "2025年10月27日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251027_1401193.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-10-28",
+      "gasolinePrice": 7755,
+      "dieselPrice": 6765,
+      "gasolineChange": -265,
+      "dieselChange": -255,
+      "direction": "down"
     },
     {
       "date": "2025-11-10",
-      "title": "2025年11月10日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251110_1401464.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-11-11",
+      "gasolinePrice": 7880,
+      "dieselPrice": 6885,
+      "gasolineChange": 125,
+      "dieselChange": 120,
+      "direction": "up"
     },
     {
       "date": "2025-11-24",
-      "title": "2025年11月24日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251124_1401864.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-11-25",
+      "gasolinePrice": 7810,
+      "dieselPrice": 6820,
+      "gasolineChange": -70,
+      "dieselChange": -65,
+      "direction": "down"
     },
     {
       "date": "2025-12-08",
-      "title": "2025年12月8日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251208_1402287.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2025-12-09",
+      "gasolinePrice": 7755,
+      "dieselPrice": 6765,
+      "gasolineChange": -55,
+      "dieselChange": -55,
+      "direction": "down"
     },
     {
       "date": "2025-12-22",
-      "title": "2025年12月22日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251222_1402523.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2026-01-06",
-      "title": "2026年1月6日国内成品油价格按机制不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260106_1403050.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2025-12-23",
+      "gasolinePrice": 7585,
+      "dieselPrice": 6600,
+      "gasolineChange": -170,
+      "dieselChange": -165,
+      "direction": "down"
     },
     {
       "date": "2026-01-20",
-      "title": "2026年1月20日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260120_1403319.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-01-21",
+      "gasolinePrice": 7670,
+      "dieselPrice": 6685,
+      "gasolineChange": 85,
+      "dieselChange": 85,
+      "direction": "up"
     },
     {
       "date": "2026-02-03",
-      "title": "2026年2月3日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260203_1403566.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-02-04",
+      "gasolinePrice": 7875,
+      "dieselPrice": 6880,
+      "gasolineChange": 205,
+      "dieselChange": 195,
+      "direction": "up"
     },
     {
       "date": "2026-02-24",
-      "title": "2026年2月24日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260224_1403852.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-02-25",
+      "gasolinePrice": 8050,
+      "dieselPrice": 7050,
+      "gasolineChange": 175,
+      "dieselChange": 170,
+      "direction": "up"
     },
     {
       "date": "2026-03-09",
-      "title": "2026年3月9日国内成品油价格按机制调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260309_1404075.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-03-10",
+      "gasolinePrice": 8745,
+      "dieselPrice": 7720,
+      "gasolineChange": 695,
+      "dieselChange": 670,
+      "direction": "up"
     },
     {
       "date": "2026-03-23",
-      "title": "2026年3月23日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260323_1404295.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-03-24",
+      "gasolinePrice": 9905,
+      "dieselPrice": 8835,
+      "gasolineChange": 1160,
+      "dieselChange": 1115,
+      "direction": "up"
     },
     {
       "date": "2026-04-07",
-      "title": "2026年4月7日国家继续实施调控，成品油价格适当调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260407_1404528.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-04-08",
+      "gasolinePrice": 10325,
+      "dieselPrice": 9235,
+      "gasolineChange": 420,
+      "dieselChange": 400,
+      "direction": "up"
     },
     {
       "date": "2026-04-21",
-      "title": "2026年4月21日国内成品油价格下调",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260421_1404789.html",
-      "status": "adjusted",
+      "effective": "2026-04-22",
+      "gasolinePrice": 9770,
+      "dieselPrice": 8705,
+      "gasolineChange": -555,
+      "dieselChange": -530,
       "direction": "down"
     },
     {
       "date": "2026-05-08",
-      "title": "2026年5月8日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260508_1405100.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-05-09",
+      "gasolinePrice": 10090,
+      "dieselPrice": 9015,
+      "gasolineChange": 320,
+      "dieselChange": 310,
+      "direction": "up"
     },
     {
       "date": "2026-05-21",
-      "title": "2026年5月21日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260521_1405346.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-05-22",
+      "gasolinePrice": 10165,
+      "dieselPrice": 9085,
+      "gasolineChange": 75,
+      "dieselChange": 70,
+      "direction": "up"
     },
     {
       "date": "2026-06-04",
-      "title": "2026年6月4日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-06-05",
+      "gasolinePrice": 9640,
+      "dieselPrice": 8580,
+      "gasolineChange": -525,
+      "dieselChange": -505,
+      "direction": "down"
     },
     {
       "date": "2026-06-18",
-      "title": "2026年6月18日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-06-19",
+      "gasolinePrice": 9125,
+      "dieselPrice": 8085,
+      "gasolineChange": -515,
+      "dieselChange": -495,
+      "direction": "down"
     },
     {
       "date": "2026-07-03",
-      "title": "2026年7月3日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-07-04",
+      "gasolinePrice": 8175,
+      "dieselPrice": 7170,
+      "gasolineChange": -950,
+      "dieselChange": -915,
+      "direction": "down"
     },
     {
       "date": "2026-07-17",
-      "title": "2026年7月17日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-07-18",
+      "gasolinePrice": 8475,
+      "dieselPrice": 7460,
+      "gasolineChange": 300,
+      "dieselChange": 290,
+      "direction": "up"
     },
     {
       "date": "2026-07-31",
-      "title": "2026年7月31日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260731_1406853.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-08-01",
+      "gasolinePrice": 9160,
+      "dieselPrice": 8115,
+      "gasolineChange": 685,
+      "dieselChange": 655,
+      "direction": "up"
     },
     {
       "date": "2026-08-14",
-      "title": "2026年8月14日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260814_1406999.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-08-15",
+      "gasolinePrice": 8930,
+      "dieselPrice": 7895,
+      "gasolineChange": -230,
+      "dieselChange": -220,
+      "direction": "down"
     },
     {
       "date": "2026-08-28",
-      "title": "2026年8月28日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260828_1407254.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-08-29",
+      "gasolinePrice": 9305,
+      "dieselPrice": 8255,
+      "gasolineChange": 375,
+      "dieselChange": 360,
+      "direction": "up"
     },
     {
       "date": "2026-09-11",
-      "title": "2026年9月11日国家对成品油价格实施调控",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260911_1407564.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-09-12",
+      "gasolinePrice": 9565,
+      "dieselPrice": 8505,
+      "gasolineChange": 260,
+      "dieselChange": 250,
+      "direction": "up"
     },
     {
       "date": "2026-09-24",
-      "title": "2026年9月24日国家继续实施调控，成品油价格适当调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260924_1407824.html",
-      "status": "adjusted",
-      "direction": "unknown"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "2026年10月15日国内成品油价格不作调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170.html",
-      "status": "unchanged",
-      "direction": "none"
+      "effective": "2026-09-25",
+      "gasolinePrice": 9960,
+      "dieselPrice": 8890,
+      "gasolineChange": 395,
+      "dieselChange": 385,
+      "direction": "up"
     },
     {
       "date": "2026-10-29",
-      "title": "2026年10月29日国家再次实施调控，成品油价格适当调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-10-30",
+      "gasolinePrice": 10305,
+      "dieselPrice": 9225,
+      "gasolineChange": 345,
+      "dieselChange": 335,
+      "direction": "up"
     },
     {
       "date": "2026-11-12",
-      "title": "2026年11月12日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html",
-      "status": "adjusted",
-      "direction": "unknown"
+      "effective": "2026-11-13",
+      "gasolinePrice": 9660,
+      "dieselPrice": 8600,
+      "gasolineChange": -645,
+      "dieselChange": -625,
+      "direction": "down"
     }
   ]
 }

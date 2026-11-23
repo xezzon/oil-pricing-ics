@@ -4,1770 +4,945 @@ PRODID:-//xezzon/oil-pricing-ics//CN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:国内成品油调价日历
-X-WR-CALDESC:国内成品油调价窗口。数据来源：国家发展改
- 革委新闻发布栏目。
+X-WR-CALDESC:国内成品油调价窗口。数据来源：东方财富数
+ 据中心。
 X-WR-TIMEZONE:Asia/Shanghai
 REFRESH-INTERVAL;VALUE=DURATION:P1W
 X-PUBLISHED-TTL:PT6H
 SOURCE;VALUE=URI:https://github.com/xezzon/oil-pricing-ics
 BEGIN:VEVENT
-UID:oil-pricing-20230217@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230217
-DTEND;VALUE=DATE:20230218
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2023年2月17日国内成品油
- 价格不作调整\n公告日期：2023-02-17\n本轮调价窗口不调整
- 成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202302/t202
- 30217_1348864.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202302/t20230217_1348864.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230303@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230303
-DTEND;VALUE=DATE:20230304
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2023年3月3日国内成品油价
- 格不作调整\n公告日期：2023-03-03\n本轮调价窗口不调整成
- 品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202303/t202303
- 03_1350622.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230303_1350622.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230317@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230317
-DTEND;VALUE=DATE:20230318
-SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2023年3月17日24时起国内成
- 品油价格按机制下调\n公告日期：2023-03-17\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 03/t20230317_1351325.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230317_1351325.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230331@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230331
-DTEND;VALUE=DATE:20230401
-SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2023年3月31日24时起国内成
- 品油价格按机制下调\n公告日期：2023-03-31\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 03/t20230331_1353081.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202303/t20230331_1353081.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230417@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230417
-DTEND;VALUE=DATE:20230418
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年4月17日24时起国内成
- 品油价格按机制上调\n公告日期：2023-04-17\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 04/t20230417_1353648.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230417_1353648.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230428@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230428
-DTEND;VALUE=DATE:20230429
-SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2023年4月28日24时起国内成
- 品油价格按机制下调\n公告日期：2023-04-28\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 04/t20230428_1355157.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202304/t20230428_1355157.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230516@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230516
-DTEND;VALUE=DATE:20230517
-SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2023年5月16日24时起国内成
- 品油价格按机制下调\n公告日期：2023-05-16\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 05/t20230516_1355789.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230516_1355789.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230530@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230530
-DTEND;VALUE=DATE:20230531
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年5月30日24时起国内成
- 品油价格按机制上调\n公告日期：2023-05-30\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 05/t20230530_1356745.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202305/t20230530_1356745.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230613@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230613
-DTEND;VALUE=DATE:20230614
-SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2023年6月13日24时起国内成
- 品油价格按机制下调\n公告日期：2023-06-13\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 06/t20230613_1357539.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230613_1357539.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230628@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230628
-DTEND;VALUE=DATE:20230629
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年6月28日24时起国内成
- 品油价格按机制上调\n公告日期：2023-06-28\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 06/t20230628_1357927.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202306/t20230628_1357927.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230712@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230712
-DTEND;VALUE=DATE:20230713
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年7月12日24时起国内成
- 品油价格按机制上调\n公告日期：2023-07-12\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 07/t20230712_1358334.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230712_1358334.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230726@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230726
-DTEND;VALUE=DATE:20230727
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年7月26日24时起国内成
- 品油价格按机制上调\n公告日期：2023-07-26\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 07/t20230726_1358699.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202307/t20230726_1358699.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230809@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230809
-DTEND;VALUE=DATE:20230810
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年8月9日24时起国内成
- 品油价格按机制上调\n公告日期：2023-08-09\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 08/t20230809_1359258.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230809_1359258.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230823@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230823
-DTEND;VALUE=DATE:20230824
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2023年8月23日24时起国内成
- 品油价格按机制上调\n公告日期：2023-08-23\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 08/t20230823_1360025.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202308/t20230823_1360025.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230906@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230906
-DTEND;VALUE=DATE:20230907
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2023年9月6日国内成品油价
- 格不作调整\n公告日期：2023-09-06\n本轮调价窗口不调整成
- 品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202309/t202309
- 06_1360397.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230906_1360397.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20230920@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20230920
-DTEND;VALUE=DATE:20230921
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年9月20日24时起国内成
- 品油价格按机制调整\n公告日期：2023-09-20\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 09/t20230920_1360717.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202309/t20230920_1360717.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231010@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231010
-DTEND;VALUE=DATE:20231011
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年10月10日24时起国内
- 成品油价格按机制调整\n公告日期：2023-10-10\n新价格自公
- 布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2
- 02310/t20231010_1361121.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231010_1361121.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231024@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231024
-DTEND;VALUE=DATE:20231025
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年10月24日24时起国内
- 成品油价格按机制调整\n公告日期：2023-10-24\n新价格自公
- 布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2
- 02310/t20231024_1361478.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202310/t20231024_1361478.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231107@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231107
-DTEND;VALUE=DATE:20231108
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年11月7日24时起国内成
- 品油价格按机制调整\n公告日期：2023-11-07\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 11/t20231107_1361829.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231107_1361829.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231121@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231121
-DTEND;VALUE=DATE:20231122
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年11月21日24时起国内
- 成品油价格按机制调整\n公告日期：2023-11-21\n新价格自公
- 布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2
- 02311/t20231121_1362158.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202311/t20231121_1362158.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231205@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231205
-DTEND;VALUE=DATE:20231206
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年12月5日24时起国内成
- 品油价格按机制调整\n公告日期：2023-12-05\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2023
- 12/t20231205_1362437.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231205_1362437.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20231219@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20231219
-DTEND;VALUE=DATE:20231220
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2023年12月19日24时起国内
- 成品油价格按机制调整\n公告日期：2023-12-19\n新价格自公
- 布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2
- 02312/t20231219_1362767.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202312/t20231219_1362767.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240103@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240103
-DTEND;VALUE=DATE:20240104
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年1月3日24时起国内成
- 品油价格按机制调整\n公告日期：2024-01-03\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2024
- 01/t20240103_1363079.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240103_1363079.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240117@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240117
-DTEND;VALUE=DATE:20240118
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年1月17日24时起国内成
- 品油价格按机制调整\n公告日期：2024-01-17\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2024
- 01/t20240117_1363439.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240117_1363439.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240131@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240131
-DTEND;VALUE=DATE:20240201
-SUMMARY:油价上调
-DESCRIPTION:国家发展改革委公告：2024年1月31日24时起国内成
- 品油价格按机制上调\n公告日期：2024-01-31\n新价格自公布
- 当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/2024
- 01/t20240131_1363834.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202401/t20240131_1363834.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240219@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240219
-DTEND;VALUE=DATE:20240220
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年2月19日国内成品油
- 价格按机制不作调整\n公告日期：2024-02-19\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2402/t20240219_1364095.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202402/t20240219_1364095.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240304@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240304
-DTEND;VALUE=DATE:20240305
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年3月4日国内成品油价
- 格按机制调整\n公告日期：2024-03-04\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240
- 304_1364393.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240304_1364393.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240318@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240318
-DTEND;VALUE=DATE:20240319
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年3月18日国内成品油
- 价格按机制不作调整\n公告日期：2024-03-18\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2403/t20240318_1365046.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202403/t20240318_1365046.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240401@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240401
-DTEND;VALUE=DATE:20240402
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年4月1日国内成品油价
- 格按机制调整\n公告日期：2024-04-01\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240
- 401_1365388.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240401_1365388.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240416@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240416
-DTEND;VALUE=DATE:20240417
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：国内成品油价格按机制调
- 整\n公告日期：2024-04-16\n新价格自公布当日 24:00 起执行
- 。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240416_1365703.h
- tml
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240416_1365703.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240429@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240429
-DTEND;VALUE=DATE:20240430
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年4月29日国内成品油
- 价格按机制调整\n公告日期：2024-04-29\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20
- 240429_1366287.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240429_1366287.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240515@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240515
-DTEND;VALUE=DATE:20240516
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年5月15日国内成品油
- 价格按机制调整\n公告日期：2024-05-15\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20
- 240515_1386222.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240515_1386222.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240529@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240529
-DTEND;VALUE=DATE:20240530
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年5月29日国内成品油
- 价格按机制不作调整\n公告日期：2024-05-29\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2405/t20240529_1386532.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202405/t20240529_1386532.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240613@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240613
-DTEND;VALUE=DATE:20240614
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年6月13日国内成品油
- 价格按机制调整\n公告日期：2024-06-13\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20
- 240613_1386864.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240613_1386864.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240627@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240627
-DTEND;VALUE=DATE:20240628
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年6月27日国内成品油
- 价格按机制调整\n公告日期：2024-06-27\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20
- 240627_1391342.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202406/t20240627_1391342.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240711@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240711
-DTEND;VALUE=DATE:20240712
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年7月11日国内成品油
- 价格按机制调整\n公告日期：2024-07-11\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20
- 240711_1391617.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240711_1391617.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240725@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240725
-DTEND;VALUE=DATE:20240726
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年7月25日国内成品油
- 价格按机制调整\n公告日期：2024-07-25\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20
- 240725_1391947.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202407/t20240725_1391947.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240808@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240808
-DTEND;VALUE=DATE:20240809
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年8月8日国内成品油价
- 格按机制调整\n公告日期：2024-08-08\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240
- 808_1392318.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240808_1392318.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240822@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240822
-DTEND;VALUE=DATE:20240823
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年8月22日国内成品油
- 价格按机制不作调整\n公告日期：2024-08-22\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2408/t20240822_1392530.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202408/t20240822_1392530.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240905@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240905
-DTEND;VALUE=DATE:20240906
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年9月5日国内成品油价
- 格按机制调整\n公告日期：2024-09-05\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240
- 905_1392834.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240905_1392834.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20240920@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20240920
-DTEND;VALUE=DATE:20240921
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年9月20日国内成品油
- 价格按机制调整\n公告日期：2024-09-20\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20
- 240920_1393111.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202409/t20240920_1393111.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241010@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241010
-DTEND;VALUE=DATE:20241011
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年10月10日国内成品油
- 价格按机制调整\n公告日期：2024-10-10\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20
- 241010_1393553.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241010_1393553.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241023@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241023
-DTEND;VALUE=DATE:20241024
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年10月23日国内成品油
- 价格按机制调整\n公告日期：2024-10-23\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20
- 241023_1393865.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202410/t20241023_1393865.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241106@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241106
-DTEND;VALUE=DATE:20241107
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2024年11月6日国内成品油
- 价格按机制调整\n公告日期：2024-11-06\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20
- 241106_1394298.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241106_1394298.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241120@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241120
-DTEND;VALUE=DATE:20241121
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年11月20日国内成品油
- 价格不作调整\n公告日期：2024-11-20\n本轮调价窗口不调整
- 成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202411/t202
- 41120_1394603.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202411/t20241120_1394603.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241204@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241204
-DTEND;VALUE=DATE:20241205
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年12月4日国内成品油
- 价格按机制不作调整\n公告日期：2024-12-04\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2412/t20241204_1394837.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241204_1394837.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20241218@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20241218
-DTEND;VALUE=DATE:20241219
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2024年12月18日国内成品油
- 价格按机制不作调整\n公告日期：2024-12-18\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2412/t20241218_1395064.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202412/t20241218_1395064.html
-END:VEVENT
-BEGIN:VEVENT
 UID:oil-pricing-20250102@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250102
 DTEND;VALUE=DATE:20250103
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年1月2日国内成品油价
- 格按机制调整\n公告日期：2025-01-02\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250
- 102_1395423.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-01-02 24:00（即 2025-01-03 00:00 起执
+ 行新价格）\n汽油：8570 元/吨（较上期 +70 元/吨）\n柴油
+ ：7550 元/吨（较上期 +70 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250102_1395423.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250116@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250116
 DTEND;VALUE=DATE:20250117
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年1月16日国内成品油
- 价格按机制调整\n公告日期：2025-01-16\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20
- 250116_1395727.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-01-16 24:00（即 2025-01-17 00:00 起执
+ 行新价格）\n汽油：8910 元/吨（较上期 +340 元/吨）\n柴油
+ ：7875 元/吨（较上期 +325 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202501/t20250116_1395727.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250206@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250206
-DTEND;VALUE=DATE:20250207
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年2月6日国内成品油价
- 格按机制不作调整\n公告日期：2025-02-06\n本轮调价窗口不
- 调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20250
- 2/t20250206_1396007.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250206_1396007.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250219@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250219
 DTEND;VALUE=DATE:20250220
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年2月19日国内成品油
- 价格按机制调整\n公告日期：2025-02-19\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20
- 250219_1396225.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-02-19 24:00（即 2025-02-20 00:00 起执
+ 行新价格）\n汽油：8740 元/吨（较上期 -170 元/吨）\n柴油
+ ：7715 元/吨（较上期 -160 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202502/t20250219_1396225.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250305@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250305
 DTEND;VALUE=DATE:20250306
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年3月5日国内成品油价
- 格按机制调整\n公告日期：2025-03-05\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250
- 305_1396430.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-03-05 24:00（即 2025-03-06 00:00 起执
+ 行新价格）\n汽油：8605 元/吨（较上期 -135 元/吨）\n柴油
+ ：7585 元/吨（较上期 -130 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250305_1396430.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250319@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250319
 DTEND;VALUE=DATE:20250320
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年3月19日国内成品油
- 价格按机制调整\n公告日期：2025-03-19\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20
- 250319_1396715.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-03-19 24:00（即 2025-03-20 00:00 起执
+ 行新价格）\n汽油：8325 元/吨（较上期 -280 元/吨）\n柴油
+ ：7315 元/吨（较上期 -270 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202503/t20250319_1396715.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250402@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250402
 DTEND;VALUE=DATE:20250403
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年4月2日国内成品油价
- 格按机制调整\n公告日期：2025-04-02\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250
- 402_1396996.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-04-02 24:00（即 2025-04-03 00:00 起执
+ 行新价格）\n汽油：8555 元/吨（较上期 +230 元/吨）\n柴油
+ ：7535 元/吨（较上期 +220 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250402_1396996.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250417@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250417
 DTEND;VALUE=DATE:20250418
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年4月17日国内成品油
- 价格按机制调整\n公告日期：2025-04-17\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20
- 250417_1397240.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-04-17 24:00（即 2025-04-18 00:00 起执
+ 行新价格）\n汽油：8075 元/吨（较上期 -480 元/吨）\n柴油
+ ：7070 元/吨（较上期 -465 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250417_1397240.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250430@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250430
-DTEND;VALUE=DATE:20250501
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年4月30日国内成品油
- 价格按机制不作调整\n公告日期：2025-04-30\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2504/t20250430_1397516.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202504/t20250430_1397516.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250519@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250519
 DTEND;VALUE=DATE:20250520
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年5月19日国内成品油
- 价格按机制调整\n公告日期：2025-05-19\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202505/t20
- 250519_1397793.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-05-19 24:00（即 2025-05-20 00:00 起执
+ 行新价格）\n汽油：7845 元/吨（较上期 -230 元/吨）\n柴油
+ ：6850 元/吨（较上期 -220 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202505/t20250519_1397793.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250603@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250603
 DTEND;VALUE=DATE:20250604
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年6月3日国内成品油价
- 格按机制调整\n公告日期：2025-06-03\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250
- 603_1398198.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-06-03 24:00（即 2025-06-04 00:00 起执
+ 行新价格）\n汽油：7910 元/吨（较上期 +65 元/吨）\n柴油
+ ：6910 元/吨（较上期 +60 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250603_1398198.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250617@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250617
 DTEND;VALUE=DATE:20250618
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年6月17日国内成品油
- 价格按机制调整\n公告日期：2025-06-17\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20
- 250617_1398486.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-06-17 24:00（即 2025-06-18 00:00 起执
+ 行新价格）\n汽油：8170 元/吨（较上期 +260 元/吨）\n柴油
+ ：7165 元/吨（较上期 +255 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202506/t20250617_1398486.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250701@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250701
 DTEND;VALUE=DATE:20250702
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年7月1日国内成品油价
- 格按机制调整\n公告日期：2025-07-01\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250
- 701_1398919.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-07-01 24:00（即 2025-07-02 00:00 起执
+ 行新价格）\n汽油：8405 元/吨（较上期 +235 元/吨）\n柴油
+ ：7390 元/吨（较上期 +225 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250701_1398919.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250715@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250715
 DTEND;VALUE=DATE:20250716
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年7月15日国内成品油
- 价格按机制调整\n公告日期：2025-07-15\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20
- 250715_1399195.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-07-15 24:00（即 2025-07-16 00:00 起执
+ 行新价格）\n汽油：8275 元/吨（较上期 -130 元/吨）\n柴油
+ ：7265 元/吨（较上期 -125 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250715_1399195.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250729@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250729
-DTEND;VALUE=DATE:20250730
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年7月29日国内成品油
- 价格按机制不作调整\n公告日期：2025-07-29\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2507/t20250729_1399467.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202507/t20250729_1399467.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250812@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250812
-DTEND;VALUE=DATE:20250813
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年8月12日国内成品油
- 价格按机制不作调整\n公告日期：2025-08-12\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2508/t20250812_1399754.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250812_1399754.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20250826@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20250826
 DTEND;VALUE=DATE:20250827
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年8月26日国内成品油
- 价格按机制调整\n公告日期：2025-08-26\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20
- 250826_1400056.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-08-26 24:00（即 2025-08-27 00:00 起执
+ 行新价格）\n汽油：8095 元/吨（较上期 -180 元/吨）\n柴油
+ ：7090 元/吨（较上期 -175 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202508/t20250826_1400056.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250909@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250909
-DTEND;VALUE=DATE:20250910
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年9月9日国内成品油价
- 格按机制不作调整\n公告日期：2025-09-09\n本轮调价窗口不
- 调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20250
- 9/t20250909_1400343.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250909_1400343.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20250923@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20250923
-DTEND;VALUE=DATE:20250924
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2025年9月23日国内成品油
- 价格按机制不作调整\n公告日期：2025-09-23\n本轮调价窗口
- 不调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20
- 2509/t20250923_1400624.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202509/t20250923_1400624.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251013@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251013
 DTEND;VALUE=DATE:20251014
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年10月13日国内成品油
- 价格按机制调整\n公告日期：2025-10-13\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20
- 251013_1400937.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-10-13 24:00（即 2025-10-14 00:00 起执
+ 行新价格）\n汽油：8020 元/吨（较上期 -75 元/吨）\n柴油
+ ：7020 元/吨（较上期 -70 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251013_1400937.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251027@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251027
 DTEND;VALUE=DATE:20251028
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年10月27日国内成品油
- 价格按机制调整\n公告日期：2025-10-27\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20
- 251027_1401193.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-10-27 24:00（即 2025-10-28 00:00 起执
+ 行新价格）\n汽油：7755 元/吨（较上期 -265 元/吨）\n柴油
+ ：6765 元/吨（较上期 -255 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202510/t20251027_1401193.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251110@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251110
 DTEND;VALUE=DATE:20251111
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年11月10日国内成品油
- 价格按机制调整\n公告日期：2025-11-10\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20
- 251110_1401464.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2025-11-10 24:00（即 2025-11-11 00:00 起执
+ 行新价格）\n汽油：7880 元/吨（较上期 +125 元/吨）\n柴油
+ ：6885 元/吨（较上期 +120 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251110_1401464.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251124@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251124
 DTEND;VALUE=DATE:20251125
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年11月24日国内成品油
- 价格按机制调整\n公告日期：2025-11-24\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20
- 251124_1401864.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-11-24 24:00（即 2025-11-25 00:00 起执
+ 行新价格）\n汽油：7810 元/吨（较上期 -70 元/吨）\n柴油
+ ：6820 元/吨（较上期 -65 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202511/t20251124_1401864.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251208@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251208
 DTEND;VALUE=DATE:20251209
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年12月8日国内成品油
- 价格按机制调整\n公告日期：2025-12-08\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20
- 251208_1402287.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-12-08 24:00（即 2025-12-09 00:00 起执
+ 行新价格）\n汽油：7755 元/吨（较上期 -55 元/吨）\n柴油
+ ：6765 元/吨（较上期 -55 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251208_1402287.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20251222@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20251222
 DTEND;VALUE=DATE:20251223
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2025年12月22日国内成品油
- 价格按机制调整\n公告日期：2025-12-22\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20
- 251222_1402523.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2025-12-22 24:00（即 2025-12-23 00:00 起执
+ 行新价格）\n汽油：7585 元/吨（较上期 -170 元/吨）\n柴油
+ ：6600 元/吨（较上期 -165 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202512/t20251222_1402523.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20260106@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20260106
-DTEND;VALUE=DATE:20260107
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2026年1月6日国内成品油价
- 格按机制不作调整\n公告日期：2026-01-06\n本轮调价窗口不
- 调整成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/20260
- 1/t20260106_1403050.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260106_1403050.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260120@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260120
 DTEND;VALUE=DATE:20260121
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年1月20日国内成品油
- 价格按机制调整\n公告日期：2026-01-20\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20
- 260120_1403319.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-01-20 24:00（即 2026-01-21 00:00 起执
+ 行新价格）\n汽油：7670 元/吨（较上期 +85 元/吨）\n柴油
+ ：6685 元/吨（较上期 +85 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202601/t20260120_1403319.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260203@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260203
 DTEND;VALUE=DATE:20260204
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年2月3日国内成品油价
- 格按机制调整\n公告日期：2026-02-03\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260
- 203_1403566.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-02-03 24:00（即 2026-02-04 00:00 起执
+ 行新价格）\n汽油：7875 元/吨（较上期 +205 元/吨）\n柴油
+ ：6880 元/吨（较上期 +195 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260203_1403566.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260224@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260224
 DTEND;VALUE=DATE:20260225
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年2月24日国内成品油
- 价格按机制调整\n公告日期：2026-02-24\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20
- 260224_1403852.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-02-24 24:00（即 2026-02-25 00:00 起执
+ 行新价格）\n汽油：8050 元/吨（较上期 +175 元/吨）\n柴油
+ ：7050 元/吨（较上期 +170 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202602/t20260224_1403852.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260309@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260309
 DTEND;VALUE=DATE:20260310
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年3月9日国内成品油价
- 格按机制调整\n公告日期：2026-03-09\n新价格自公布当日 24
- :00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260
- 309_1404075.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-03-09 24:00（即 2026-03-10 00:00 起执
+ 行新价格）\n汽油：8745 元/吨（较上期 +695 元/吨）\n柴油
+ ：7720 元/吨（较上期 +670 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260309_1404075.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260323@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260323
 DTEND;VALUE=DATE:20260324
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年3月23日国内成品油
- 价格调整\n公告日期：2026-03-23\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260323_
- 1404295.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-03-23 24:00（即 2026-03-24 00:00 起执
+ 行新价格）\n汽油：9905 元/吨（较上期 +1160 元/吨）\n柴
+ 油：8835 元/吨（较上期 +1115 元/吨）\n数据来源：东方财
+ 富数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202603/t20260323_1404295.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260407@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260407
 DTEND;VALUE=DATE:20260408
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年4月7日国家继续实施
- 调控，成品油价格适当调整\n公告日期：2026-04-07\n新价格
- 自公布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/
- xwfb/202604/t20260407_1404528.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-04-07 24:00（即 2026-04-08 00:00 起执
+ 行新价格）\n汽油：10325 元/吨（较上期 +420 元/吨）\n柴
+ 油：9235 元/吨（较上期 +400 元/吨）\n数据来源：东方财
+ 富数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260407_1404528.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260421@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260421
 DTEND;VALUE=DATE:20260422
 SUMMARY:油价下调
-DESCRIPTION:国家发展改革委公告：2026年4月21日国内成品油
- 价格下调\n公告日期：2026-04-21\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260421_
- 1404789.html
+DESCRIPTION:执行时间：2026-04-21 24:00（即 2026-04-22 00:00 起执
+ 行新价格）\n汽油：9770 元/吨（较上期 -555 元/吨）\n柴油
+ ：8705 元/吨（较上期 -530 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202604/t20260421_1404789.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260508@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260508
 DTEND;VALUE=DATE:20260509
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年5月8日国内成品油价
- 格调整\n公告日期：2026-05-08\n新价格自公布当日 24:00 起
- 执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260508_140
- 5100.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-05-08 24:00（即 2026-05-09 00:00 起执
+ 行新价格）\n汽油：10090 元/吨（较上期 +320 元/吨）\n柴
+ 油：9015 元/吨（较上期 +310 元/吨）\n数据来源：东方财
+ 富数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260508_1405100.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260521@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年5月21日国内成品油
- 价格调整\n公告日期：2026-05-21\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260521_
- 1405346.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-05-21 24:00（即 2026-05-22 00:00 起执
+ 行新价格）\n汽油：10165 元/吨（较上期 +75 元/吨）\n柴油
+ ：9085 元/吨（较上期 +70 元/吨）\n数据来源：东方财富数
+ 据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202605/t20260521_1405346.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260604@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260604
 DTEND;VALUE=DATE:20260605
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年6月4日国内成品油价
- 格调整\n公告日期：2026-06-04\n新价格自公布当日 24:00 起
- 执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_140
- 5695.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2026-06-04 24:00（即 2026-06-05 00:00 起执
+ 行新价格）\n汽油：9640 元/吨（较上期 -525 元/吨）\n柴油
+ ：8580 元/吨（较上期 -505 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260618@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260619
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年6月18日国内成品油
- 价格调整\n公告日期：2026-06-18\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_
- 1405957.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2026-06-18 24:00（即 2026-06-19 00:00 起执
+ 行新价格）\n汽油：9125 元/吨（较上期 -515 元/吨）\n柴油
+ ：8085 元/吨（较上期 -495 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260703@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260704
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年7月3日国内成品油价
- 格调整\n公告日期：2026-07-03\n新价格自公布当日 24:00 起
- 执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_140
- 6245.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2026-07-03 24:00（即 2026-07-04 00:00 起执
+ 行新价格）\n汽油：8175 元/吨（较上期 -950 元/吨）\n柴油
+ ：7170 元/吨（较上期 -915 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260717@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260718
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年7月17日国内成品油
- 价格调整\n公告日期：2026-07-17\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_
- 1406559.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-07-17 24:00（即 2026-07-18 00:00 起执
+ 行新价格）\n汽油：8475 元/吨（较上期 +300 元/吨）\n柴油
+ ：7460 元/吨（较上期 +290 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260717_1406559.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260731@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年7月31日国内成品油
- 价格调整\n公告日期：2026-07-31\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260731_
- 1406853.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-07-31 24:00（即 2026-08-01 00:00 起执
+ 行新价格）\n汽油：9160 元/吨（较上期 +685 元/吨）\n柴油
+ ：8115 元/吨（较上期 +655 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260731_1406853.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260814@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年8月14日国内成品油
- 价格调整\n公告日期：2026-08-14\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260814_
- 1406999.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2026-08-14 24:00（即 2026-08-15 00:00 起执
+ 行新价格）\n汽油：8930 元/吨（较上期 -230 元/吨）\n柴油
+ ：7895 元/吨（较上期 -220 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260814_1406999.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260828@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年8月28日国内成品油
- 价格调整\n公告日期：2026-08-28\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260828_
- 1407254.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-08-28 24:00（即 2026-08-29 00:00 起执
+ 行新价格）\n汽油：9305 元/吨（较上期 +375 元/吨）\n柴油
+ ：8255 元/吨（较上期 +360 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202608/t20260828_1407254.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260911@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年9月11日国家对成品
- 油价格实施调控\n公告日期：2026-09-11\n新价格自公布当日
-  24:00 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20
- 260911_1407564.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-09-11 24:00（即 2026-09-12 00:00 起执
+ 行新价格）\n汽油：9565 元/吨（较上期 +260 元/吨）\n柴油
+ ：8505 元/吨（较上期 +250 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260911_1407564.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20260924@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年9月24日国家继续实
- 施调控，成品油价格适当调整\n公告日期：2026-09-24\n新价
- 格自公布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xw
- dt/xwfb/202609/t20260924_1407824.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-09-24 24:00（即 2026-09-25 00:00 起执
+ 行新价格）\n汽油：9960 元/吨（较上期 +395 元/吨）\n柴油
+ ：8890 元/吨（较上期 +385 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260924_1407824.html
-END:VEVENT
-BEGIN:VEVENT
-UID:oil-pricing-20261015@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:油价不作调整
-DESCRIPTION:国家发展改革委公告：2026年10月15日国内成品油
- 价格不作调整\n公告日期：2026-10-15\n本轮调价窗口不调整
- 成品油价格。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202610/t202
- 61015_1408170.html
-CATEGORIES:油价
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408170.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20261029@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年10月29日国家再次实
- 施调控，成品油价格适当调整\n公告日期：2026-10-29\n新价
- 格自公布当日 24:00 起执行。\n原文：https://www.ndrc.gov.cn/xw
- dt/xwfb/202610/t20261029_1408449.html
+SUMMARY:油价上调
+DESCRIPTION:执行时间：2026-10-29 24:00（即 2026-10-30 00:00 起执
+ 行新价格）\n汽油：10305 元/吨（较上期 +345 元/吨）\n柴
+ 油：9225 元/吨（较上期 +335 元/吨）\n数据来源：东方财
+ 富数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20261112@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
-SUMMARY:油价调整
-DESCRIPTION:国家发展改革委公告：2026年11月12日国内成品油
- 价格调整\n公告日期：2026-11-12\n新价格自公布当日 24:00 
- 起执行。\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_
- 1408795.html
+SUMMARY:油价下调
+DESCRIPTION:执行时间：2026-11-12 24:00（即 2026-11-13 00:00 起执
+ 行新价格）\n汽油：9660 元/吨（较上期 -645 元/吨）\n柴油
+ ：8600 元/吨（较上期 -625 元/吨）\n数据来源：东方财富
+ 数据中心 https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20261126@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20261210@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20261224@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270108@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270122@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270123
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270204@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270205
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270225@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270226
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270311@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270312
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270325@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270409@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270423@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270511@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270525@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270608@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270608
 DTEND;VALUE=DATE:20270609
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270623@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270623
 DTEND;VALUE=DATE:20270624
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270707@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270707
 DTEND;VALUE=DATE:20270708
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270721@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270721
 DTEND;VALUE=DATE:20270722
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270804@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270804
 DTEND;VALUE=DATE:20270805
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270818@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270818
 DTEND;VALUE=DATE:20270819
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270901@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270901
 DTEND;VALUE=DATE:20270902
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270916@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270916
 DTEND;VALUE=DATE:20270917
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20270929@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20270929
 DTEND;VALUE=DATE:20270930
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20271019@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20271019
 DTEND;VALUE=DATE:20271020
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20271102@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20271102
 DTEND;VALUE=DATE:20271103
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 BEGIN:VEVENT
 UID:oil-pricing-20271116@xezzon/oil-pricing-ics
-DTSTAMP:20261123T124957Z
+DTSTAMP:20261123T130608Z
 DTSTART;VALUE=DATE:20271116
 DTEND;VALUE=DATE:20271117
 SUMMARY:调价窗口（预测）
 DESCRIPTION:按“每 10 个工作日一调”的机制推算出的调价
  窗口，尚未公布，\n最终以国家发展改革委公告为准。\n
- 数据来源：https://www.ndrc.gov.cn/xwdt/xwfb/
+ 数据来源：https://data.eastmoney.com/cjsj/oil_default.html
 CATEGORIES:油价
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-URL:https://www.ndrc.gov.cn/xwdt/xwfb/
+URL:https://data.eastmoney.com/cjsj/oil_default.html
 END:VEVENT
 END:VCALENDAR

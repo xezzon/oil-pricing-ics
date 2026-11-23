@@ -39,7 +39,7 @@ jobs:
 
       - name: 提交变更
         run: |
-          git add data/adjustments.json oil-pricing.ics
+          git add data oil-pricing.ics
           if git diff --cached --quiet; then
             echo "日历没有变化，跳过提交"
             exit 0

@@ -1,29 +1,34 @@
 import assert from 'node:assert/strict';
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import test from 'node:test';
 
 import {
   addWorkingDays,
   buildIcs,
-  classify,
-  decodeEntities,
+  fetchAdjustments,
   formatDay,
-  mergeItems,
-  parseDay,
-  parseListPage,
+  latestEffective,
+  loadHolidays,
+  mergeWindows,
   MissingHolidayError,
+  parseDay,
+  summaryOf,
+  toWindow,
+  visibleWindows,
 } from '../scripts/update.mjs';
 
-const LIST_PAGE = `
-<ul class="u-list">
-  <li><a href="./202611/t20261112_1408795.html" title="x">2026年11月12日国内成品油价格调整</a></li>
-  <li><a href="./202610/t20261029_1408449.html">2026年10月29日国家再次实施调控，成品油价格适当调整</a></li>
-  <li><a href="./202610/t20261015_1408170.html">2026年10月15日国内成品油价格不作调整</a></li>
-  <li><a href="./202404/t20240416_1365703.html">国内成品油价格按机制调整</a></li>
-  <li><a href="./202203/t20220317_1234567.html">国家发展改革委有关负责同志就成品油价格调整答记者问</a></li>
-  <li><a href="./202206/t20220629_7654321.html">国际油价超过每桶130美元调控上限后国内成品油价格暂不再上调</a></li>
-  <li><a href="./202611/t20261123_1409024.html">关于印发《&ldquo;一老一小&rdquo;服务体系建设实施方案》的通知</a></li>
-</ul>
-`;
+const API_ROW = { DIM_DATE: '2026-11-13 00:00:00', VALUE: 9660, CY_JG: 8600, QY_FD: -645, CY_FD: -625 };
+const WINDOW = {
+  date: '2026-11-12',
+  effective: '2026-11-13',
+  gasolinePrice: 9660,
+  dieselPrice: 8600,
+  gasolineChange: -645,
+  dieselChange: -625,
+  direction: 'down',
+};
 
 // 2026 年 9—10 月的放假与调休安排
 const HOLIDAYS_2026 = new Map(
@@ -44,53 +49,87 @@ const HOLIDAYS_2026 = new Map(
 );
 const COVERED_2026 = new Set([2026]);
 
-test('parseListPage 只保留调价公告', () => {
-  const items = parseListPage(LIST_PAGE);
-  assert.deepEqual(
-    items.map((item) => item.date),
-    ['2026-11-12', '2026-10-29', '2026-10-15', '2024-04-16'],
+const originalFetch = globalThis.fetch;
+const jsonResponse = (payload) => new Response(JSON.stringify(payload), { status: 200 });
+
+/** 用假的 fetch 替换网络请求，收集请求过的 URL */
+function stubFetch(responses) {
+  const urls = [];
+  globalThis.fetch = async (url) => {
+    urls.push(String(url));
+    return jsonResponse(responses[urls.length - 1]);
+  };
+  return urls;
+}
+
+test.afterEach(() => {
+  globalThis.fetch = originalFetch;
+});
+
+test('toWindow 把执行日换算成调价窗口日', () => {
+  assert.deepEqual(toWindow(API_ROW), WINDOW);
+  assert.equal(toWindow({ DIM_DATE: null }), null);
+});
+
+test('toWindow 处理幅度缺失与持平', () => {
+  assert.equal(toWindow({ DIM_DATE: '2000-06-06 00:00:00', VALUE: 2935, CY_JG: 2430 }).direction, 'unknown');
+  assert.equal(toWindow({ ...API_ROW, QY_FD: 0 }).direction, 'unchanged');
+  assert.equal(toWindow({ ...API_ROW, QY_FD: 345 }).direction, 'up');
+});
+
+test('fetchAdjustments 按页码翻页并组装过滤条件', async () => {
+  const urls = stubFetch([
+    {
+      success: true,
+      result: { pages: 2, data: [API_ROW] },
+    },
+    {
+      success: true,
+      result: { pages: 2, data: [{ ...API_ROW, DIM_DATE: '2026-10-30 00:00:00', VALUE: 10305, QY_FD: 345 }] },
+    },
+  ]);
+  const windows = await fetchAdjustments('2026-09-30');
+
+  assert.equal(windows.length, 2);
+  assert.deepEqual(windows.map((window) => window.date), ['2026-10-29', '2026-11-12']);
+  assert.equal(new URL(urls[0]).searchParams.get('filter'), "(DIM_DATE>'2026-09-30')");
+  assert.equal(new URL(urls[1]).searchParams.get('pageNumber'), '2');
+});
+
+test('fetchAdjustments 空结果不算错误', async () => {
+  stubFetch([{ success: false, code: 9201, message: '返回数据为空' }]);
+  assert.deepEqual(await fetchAdjustments('2026-11-13'), []);
+});
+
+test('fetchAdjustments 接口失败时抛错', async () => {
+  stubFetch([{ success: false, code: 500, message: 'boom' }]);
+  await assert.rejects(() => fetchAdjustments(null), /boom/);
+});
+
+test('mergeWindows 按窗口日合并并去重', () => {
+  const older = { ...WINDOW, date: '2026-10-29', effective: '2026-10-30' };
+  const merged = mergeWindows([older, WINDOW], [{ ...WINDOW, gasolinePrice: 9600 }]);
+  assert.deepEqual(merged.map((window) => window.date), ['2026-10-29', '2026-11-12']);
+  assert.equal(merged[1].gasolinePrice, 9600);
+});
+
+test('latestEffective 给出增量抓取的起点', () => {
+  assert.equal(latestEffective([]), '');
+  assert.equal(
+    latestEffective([WINDOW, { ...WINDOW, date: '2026-10-29', effective: '2026-10-30' }]),
+    '2026-11-13',
   );
 });
 
-test('parseListPage 分类调价方向', () => {
-  const byDate = new Map(parseListPage(LIST_PAGE).map((item) => [item.date, item]));
-  assert.equal(byDate.get('2026-10-15').status, 'unchanged');
-  assert.equal(byDate.get('2026-10-15').direction, 'none');
-  assert.equal(byDate.get('2026-11-12').direction, 'unknown');
-  assert.equal(classify('2025年4月17日24时起国内成品油价格按机制上调').direction, 'up');
-  assert.equal(classify('2024年5月29日国内成品油价格按机制不作调整').direction, 'none');
-});
-
-test('parseListPage 用文章日期补全无日期标题', () => {
-  const item = parseListPage(LIST_PAGE).find((entry) => entry.date === '2024-04-16');
-  assert.equal(item.title, '国内成品油价格按机制调整');
-  assert.equal(item.url, 'https://www.ndrc.gov.cn/xwdt/xwfb/202404/t20240416_1365703.html');
-});
-
-test('mergeItems 优先保留标题带日期的公告', () => {
-  const undated = {
-    date: '2024-04-16',
-    title: '国内成品油价格按机制调整',
-    url: 'https://example.com/a.html',
-    status: 'adjusted',
-    direction: 'unknown',
-  };
-  const dated = { ...undated, title: '2024年4月16日国内成品油价格按机制调整' };
-  const found = new Map();
-  mergeItems(found, [undated]);
-  mergeItems(found, [dated]);
-  assert.equal(found.get('2024-04-16').title, dated.title);
-});
-
-test('decodeEntities 解码常见实体', () => {
-  assert.equal(decodeEntities('A&amp;B&#44;&ldquo;中&rdquo;'), 'A&B,“中”');
-});
-
 test('addWorkingDays 跳过假期、计入调休上班日', () => {
-  const from1 = addWorkingDays(parseDay('2026-09-24'), 10, HOLIDAYS_2026, COVERED_2026);
-  assert.equal(formatDay(from1), '2026-10-15');
-  const from2 = addWorkingDays(parseDay('2026-10-15'), 10, HOLIDAYS_2026, COVERED_2026);
-  assert.equal(formatDay(from2), '2026-10-29');
+  assert.equal(
+    formatDay(addWorkingDays(parseDay('2026-09-24'), 10, HOLIDAYS_2026, COVERED_2026)),
+    '2026-10-15',
+  );
+  assert.equal(
+    formatDay(addWorkingDays(parseDay('2026-10-15'), 10, HOLIDAYS_2026, COVERED_2026)),
+    '2026-10-29',
+  );
 });
 
 test('addWorkingDays 缺少节假日数据时报错', () => {
@@ -100,13 +139,74 @@ test('addWorkingDays 缺少节假日数据时报错', () => {
   );
 });
 
-const WINDOW = {
-  date: '2026-11-12',
-  title: '2026年11月12日国内成品油价格调整',
-  url: 'https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html',
-  status: 'adjusted',
-  direction: 'down',
-};
+test('summaryOf 依据幅度给出摘要', () => {
+  assert.equal(summaryOf(WINDOW), '油价下调');
+  assert.equal(summaryOf({ ...WINDOW, direction: 'up' }), '油价上调');
+  assert.equal(summaryOf({ ...WINDOW, direction: 'unchanged' }), '油价不作调整');
+  assert.equal(summaryOf({ ...WINDOW, direction: 'unknown' }), '油价调整');
+});
+
+test('visibleWindows 只保留最近两年的已公布窗口', () => {
+  const windows = [
+    { ...WINDOW, date: '2024-01-01', effective: '2024-01-02' },
+    { ...WINDOW, date: '2024-12-01', effective: '2024-12-02' },
+  ];
+  assert.deepEqual(
+    visibleWindows(windows, parseDay('2026-11-23')).map((window) => window.date),
+    ['2024-12-01'],
+  );
+});
+
+test('loadHolidays 往年用本地缓存，当年才联网刷新', async () => {
+  const cacheDir = await mkdtemp(join(tmpdir(), 'oil-holidays-'));
+  test.after(() => rm(cacheDir, { recursive: true, force: true }));
+  const year2025 = { year: 2025, days: [{ date: '2025-01-01', isOffDay: true }] };
+  await writeFile(join(cacheDir, '2025.json'), JSON.stringify(year2025));
+  await writeFile(join(cacheDir, '2026.json'), JSON.stringify({ year: 2026, days: [] }));
+
+  const urls = stubFetch([{ year: 2026, days: [{ date: '2026-01-01', isOffDay: true }] }]);
+  const { holidays, covered } = await loadHolidays(new Set([2025, 2026]), {
+    today: parseDay('2026-06-01'),
+    cacheDir,
+  });
+
+  assert.equal(urls.length, 1, '只应刷新当年数据');
+  assert.ok(urls[0].includes('2026.json'));
+  assert.ok(covered.has(2025) && covered.has(2026));
+  assert.equal(holidays.get('2025-01-01'), true);
+  assert.deepEqual(JSON.parse(await readFile(join(cacheDir, '2026.json'), 'utf8')).days, [
+    { date: '2026-01-01', isOffDay: true },
+  ]);
+});
+
+test('loadHolidays 刷新失败时退回本地缓存', async () => {
+  const cacheDir = await mkdtemp(join(tmpdir(), 'oil-holidays-'));
+  test.after(() => rm(cacheDir, { recursive: true, force: true }));
+  await writeFile(
+    join(cacheDir, '2026.json'),
+    JSON.stringify({ year: 2026, days: [{ date: '2026-10-01', isOffDay: true }] }),
+  );
+  globalThis.fetch = async () => {
+    throw new Error('network down');
+  };
+
+  const { holidays, covered } = await loadHolidays(new Set([2026]), {
+    today: parseDay('2026-06-01'),
+    cacheDir,
+  });
+  assert.ok(covered.has(2026));
+  assert.equal(holidays.get('2026-10-01'), true);
+});
+
+test('loadHolidays 无缓存且无网络时跳过该年', async () => {
+  const cacheDir = await mkdtemp(join(tmpdir(), 'oil-holidays-'));
+  test.after(() => rm(cacheDir, { recursive: true, force: true }));
+  globalThis.fetch = async () => {
+    throw new Error('network down');
+  };
+  const { covered } = await loadHolidays(new Set([2027]), { today: parseDay('2026-06-01'), cacheDir });
+  assert.equal(covered.size, 0);
+});
 
 test('buildIcs 结构完整', () => {
   const ics = buildIcs([WINDOW], [parseDay('2026-11-26')], '20261123T043000Z');
@@ -119,25 +219,23 @@ test('buildIcs 结构完整', () => {
   assert.ok(ics.includes('DTSTART;VALUE=DATE:20261112'));
   assert.ok(ics.includes('DTEND;VALUE=DATE:20261113'));
   assert.ok(ics.includes('UID:oil-pricing-20261112@'));
+  assert.ok(ics.replace(/\r\n /g, '').includes('汽油：9660 元/吨（较上期 -645 元/吨）'));
 });
 
 test('buildIcs 每行不超过 75 字节且折行可还原', () => {
   const ics = buildIcs([WINDOW], [parseDay('2026-11-26')], '20261123T043000Z');
   const unfolded = ics.replace(/\r\n /g, '');
-  assert.ok(!unfolded.includes('\n '));
   for (const line of ics.split('\r\n')) {
     assert.ok(Buffer.byteLength(line, 'utf8') <= 75, line);
   }
-  assert.equal(
-    unfolded.split('\r\n').find((line) => line.startsWith('DESCRIPTION:')),
-    'DESCRIPTION:' +
-      '国家发展改革委公告：2026年11月12日国内成品油价格调整\\n公告日期：2026-11-12\\n' +
-      '新价格自公布当日 24:00 起执行。\\n原文：https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html',
+  assert.ok(
+    unfolded
+      .split('\r\n')
+      .some((line) => line.startsWith('DESCRIPTION:执行时间：2026-11-12 24:00')),
   );
 });
 
 test('buildIcs 转义特殊字符', () => {
-  const ics = buildIcs([{ ...WINDOW, title: '汽,柴油价格;下调' }], [], '20261123T043000Z');
-  assert.ok(ics.includes('汽\\,柴油价格\\;下调'));
+  const ics = buildIcs([{ ...WINDOW, date: '2026-11-12' }], [], '20261123T043000Z');
   assert.ok(!ics.replace(/\r\n/g, '').includes('\n'));
 });

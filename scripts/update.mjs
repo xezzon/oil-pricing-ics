@@ -4,14 +4,15 @@
  *
  * 数据来源（均公开、免费、无需申请）：
  *
- * 1. 国家发展改革委「新闻发布」栏目：https://www.ndrc.gov.cn/xwdt/xwfb/
- *    权威口径的调价公告（包括“不作调整”的窗口），由价格司发布。
+ * 1. 东方财富数据中心「汽柴油历史调价」：https://data.eastmoney.com/cjsj/oil_default.html
+ *    结构化 JSON 接口（reportName=RPTA_WEB_YJ_BD），一次拿到调价日期、调价幅度与汽柴油价格，
+ *    不需要解析网页；支持按日期过滤，只拉取本地还缺的增量。
  * 2. NateScarlet/holiday-cn：国务院办公厅节假日安排的机器可读版本，
  *    用于按“每 10 个工作日一调”的机制推算未来的调价窗口。
  *
  * 用法：
- *   node scripts/update.mjs              # 抓取 + 生成 ics
- *   node scripts/update.mjs --pages 16   # 首次回补更多历史
+ *   node scripts/update.mjs              # 增量抓取 + 生成 ics
+ *   node scripts/update.mjs --full       # 忽略缓存，重新拉取全部历史
  *   node scripts/update.mjs --today 2027-01-01
  */
 
@@ -23,11 +24,14 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 export const ROOT = resolve(HERE, '..');
 export const DATA_FILE = resolve(ROOT, 'data', 'adjustments.json');
+export const HOLIDAY_CACHE_DIR = resolve(ROOT, 'data', 'holidays');
 export const ICS_FILE = resolve(ROOT, 'oil-pricing.ics');
 
-// 国家发展改革委 新闻动态 / 新闻发布（index.html 为第 1 页，index_1.html 为第 2 页……）
-export const LIST_BASE = 'https://www.ndrc.gov.cn/xwdt/xwfb/';
-// 节假日数据：GitHub 原始地址，失败时回退到 jsDelivr 镜像
+export const DATA_PAGE = 'https://data.eastmoney.com/cjsj/oil_default.html';
+const API_ENDPOINT = 'https://datacenter-web.eastmoney.com/api/data/v1/get';
+const API_REPORT = 'RPTA_WEB_YJ_BD';
+const API_PAGE_SIZE = 1000;
+// 节假日数据：GitHub 原始地址，失败时回退到 jsDelivr 镜像；拉到后落盘到 data/holidays，避免每周重复下载
 export const HOLIDAY_URLS = [
   'https://raw.githubusercontent.com/NateScarlet/holiday-cn/master/{year}.json',
   'https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master/{year}.json',
@@ -40,40 +44,15 @@ export const REPO = process.env.GITHUB_REPOSITORY || 'xezzon/oil-pricing-ics';
 const CALENDAR_NAME = '国内成品油调价日历';
 const MS_PER_DAY = 86_400_000;
 const PREDICT_HORIZON_DAYS = 365;
+const HISTORY_DAYS = 730; // 日历中保留的已公布窗口时长
 const WORKING_DAYS_PER_CYCLE = 10;
-
-// 公告标题形如 “2026年11月12日国内成品油价格调整”
-const TITLE_DATE_RE = /^(\d{4})年(\d{1,2})月(\d{1,2})日/;
-// 文章地址形如 /xwdt/xwfb/202611/t20261112_1408795.html
-const URL_DATE_RE = /\/t(\d{8})_\d+\.html/;
-const ANCHOR_RE = /<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-const TAG_RE = /<[^>]+>/g;
-// 无日期前缀的公告标题，仅接受明确指向调价的句式，避免把解读、评论类文章当成调价窗口
-const UNDATED_TITLE_RE = /^(?:国家|国内|我国)[^，]{0,10}成品油价格/;
-const SKIP_TITLE_RE = /答记者问|解读|图解|发布会/;
-
-const NAMED_ENTITIES = {
-  amp: '&',
-  lt: '<',
-  gt: '>',
-  quot: '"',
-  apos: "'",
-  nbsp: ' ',
-  ldquo: '“',
-  rdquo: '”',
-  lsquo: '‘',
-  rsquo: '’',
-  mdash: '—',
-  hellip: '…',
-  middot: '·',
-};
 
 export function log(message) {
   console.error(message);
 }
 
 // --------------------------------------------------------------------------
-// 日期与网络工具
+// 日期工具
 // --------------------------------------------------------------------------
 
 /** 'YYYY-MM-DD' -> UTC 零点的 Date */
@@ -94,8 +73,9 @@ export async function fetchText(url, { retries = 3, timeoutMs = 30_000 } = {}) {
         redirect: 'follow',
         headers: {
           'User-Agent': UA,
-          Accept: 'text/html,application/json;q=0.9,*/*;q=0.8',
+          Accept: 'application/json,text/html;q=0.8,*/*;q=0.5',
           'Accept-Language': 'zh-CN,zh;q=0.9',
+          Referer: DATA_PAGE,
         },
         signal: AbortSignal.timeout(timeoutMs),
       });
@@ -109,98 +89,83 @@ export async function fetchText(url, { retries = 3, timeoutMs = 30_000 } = {}) {
   throw new Error(`下载失败 ${url}: ${lastError?.message ?? lastError}`);
 }
 
-export function decodeEntities(text) {
-  return text.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (matched, body) => {
-    if (body.startsWith('#')) {
-      const code = body[1] === 'x' ? Number.parseInt(body.slice(2), 16) : Number.parseInt(body.slice(1), 10);
-      return Number.isFinite(code) ? String.fromCodePoint(code) : matched;
-    }
-    return NAMED_ENTITIES[body] ?? matched;
-  });
-}
-
 // --------------------------------------------------------------------------
-// 抓取国家发改委公告
+// 抓取调价记录（东方财富数据中心）
 // --------------------------------------------------------------------------
 
-export const pageUrl = (index) => LIST_BASE + (index === 0 ? 'index.html' : `index_${index}.html`);
+const isEmptyResult = (payload) => payload.success === false && payload.code === 9201;
 
-/** 由标题推断 { status, direction } */
-export function classify(title) {
-  if (title.includes('不作调整') || title.includes('暂不')) return { status: 'unchanged', direction: 'none' };
-  if (title.includes('下调')) return { status: 'adjusted', direction: 'down' };
-  if (title.includes('上调')) return { status: 'adjusted', direction: 'up' };
-  return { status: 'adjusted', direction: 'unknown' };
+/** 接口返回的一行 -> 调价窗口记录 */
+export function toWindow(row) {
+  const effective = String(row.DIM_DATE ?? '').slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(effective)) return null;
+
+  const toNumber = (value) => (typeof value === 'number' && Number.isFinite(value) ? value : null);
+  const gasolineChange = toNumber(row.QY_FD);
+  const dieselChange = toNumber(row.CY_FD);
+  let direction = 'unknown';
+  if (gasolineChange !== null) {
+    direction = gasolineChange > 0 ? 'up' : gasolineChange < 0 ? 'down' : 'unchanged';
+  }
+
+  return {
+    // 调价窗口日＝公告日；数据中心记录的是执行日（公告当日 24 时起）
+    date: formatDay(addDays(parseDay(effective), -1)),
+    effective,
+    gasolinePrice: toNumber(row.VALUE),
+    dieselPrice: toNumber(row.CY_JG),
+    gasolineChange,
+    dieselChange,
+    direction,
+  };
 }
 
-/** 从一个列表页中提取成品油调价公告 */
-export function parseListPage(pageHtml) {
-  const items = [];
-  for (const match of pageHtml.matchAll(ANCHOR_RE)) {
-    const [, href, rawTitle] = match;
-    const title = decodeEntities(rawTitle.replace(TAG_RE, ''))
-      .replace(/[\s\u00a0]+/g, ' ')
-      .trim();
-    if (!title || !title.includes('成品油') || SKIP_TITLE_RE.test(title)) continue;
-
-    const urlDate = URL_DATE_RE.exec(href);
-    if (!urlDate) continue;
-    const compact = urlDate[1];
-    const published = parseDay(`${compact.slice(0, 4)}-${compact.slice(4, 6)}-${compact.slice(6, 8)}`);
-
-    const titleDate = TITLE_DATE_RE.exec(title);
-    let announced;
-    if (titleDate) {
-      announced = new Date(Date.UTC(Number(titleDate[1]), Number(titleDate[2]) - 1, Number(titleDate[3])));
-    } else if (UNDATED_TITLE_RE.test(title)) {
-      // 极少数公告标题不带日期（如 2024-04-16），用文章地址里的日期
-      announced = published;
-    } else {
-      continue;
-    }
-    if (formatDay(announced) !== formatDay(published)) {
-      // 标题日期与文章日期不一致，说明多半是评论/转发类文章
-      log(`跳过日期不一致的条目：${title}`);
-      continue;
-    }
-
-    items.push({
-      date: formatDay(announced),
-      title,
-      url: href.startsWith('http') ? href : LIST_BASE + href.replace(/^[./]+/, ''),
-      ...classify(title),
+/**
+ * 拉取调价记录。
+ * @param {string|null} since 只拉取执行日在此之后的数据（增量），为 null 时拉全部历史
+ */
+export async function fetchAdjustments(since = null) {
+  const windows = [];
+  let pages = 1;
+  const maxPages = 20;
+  for (let page = 1; page <= Math.min(pages, maxPages); page += 1) {
+    const params = new URLSearchParams({
+      reportName: API_REPORT,
+      columns: 'ALL',
+      sortColumns: 'DIM_DATE',
+      sortTypes: '1',
+      pageNumber: String(page),
+      pageSize: String(API_PAGE_SIZE),
+      source: 'WEB',
     });
-  }
-  return items;
-}
+    if (since) params.set('filter', `(DIM_DATE>'${since}')`);
 
-/** 按日期合并，优先保留标题带日期的那一条公告 */
-export function mergeItems(found, items) {
-  for (const item of items) {
-    const current = found.get(item.date);
-    if (!current) {
-      found.set(item.date, item);
-      continue;
-    }
-    if (TITLE_DATE_RE.test(item.title) && !TITLE_DATE_RE.test(current.title)) {
-      found.set(item.date, item);
-    }
-  }
-}
-
-export async function collectWindows(cached, maxPages) {
-  const known = new Set(cached.map((item) => item.date));
-  const found = new Map();
-  for (let page = 0; page < maxPages; page += 1) {
-    const items = parseListPage(await fetchText(pageUrl(page)));
-    mergeItems(found, items);
-    log(`第 ${page + 1} 页：${items.length} 条成品油公告`);
-    if (known.size > 0 && items.length > 0 && items.every((item) => known.has(item.date))) {
-      // 该页公告都已入库，更早的页面不会再带来新数据
+    const payload = JSON.parse(await fetchText(`${API_ENDPOINT}?${params}`));
+    if (isEmptyResult(payload)) {
+      log('接口返回空数据，本地已是最新');
       break;
     }
+    if (!payload.success) throw new Error(`接口返回失败：${payload.message ?? payload.code}`);
+
+    const rows = payload.result?.data ?? [];
+    for (const row of rows) {
+      const window = toWindow(row);
+      if (window) windows.push(window);
+    }
+    pages = payload.result?.pages ?? 1;
+    log(`第 ${page}/${pages} 页：${rows.length} 条调价记录`);
   }
-  return [...found.values()].sort((a, b) => a.date.localeCompare(b.date));
+  return windows.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+export const latestEffective = (windows) =>
+  windows.reduce((latest, window) => (window.effective > latest ? window.effective : latest), '');
+
+/** 按窗口日合并，新数据覆盖旧数据 */
+export function mergeWindows(cached, fetched) {
+  const merged = new Map(cached.map((window) => [window.date, window]));
+  for (const window of fetched) merged.set(window.date, window);
+  return [...merged.values()].sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // --------------------------------------------------------------------------
@@ -215,25 +180,52 @@ export class MissingHolidayError extends Error {
 }
 
 /** 返回 { holidays: Map<日期, 是否放假>, covered: Set<年份> } */
-export async function loadHolidays(years) {
+export async function loadHolidays(years, { today = new Date(), cacheDir = HOLIDAY_CACHE_DIR } = {}) {
   const holidays = new Map();
   const covered = new Set();
   for (const year of [...years].sort((a, b) => a - b)) {
-    for (const template of HOLIDAY_URLS) {
-      const url = template.replace('{year}', String(year));
-      try {
-        const payload = JSON.parse(await fetchText(url, { retries: 2, timeoutMs: 20_000 }));
-        if (payload.year !== year || !Array.isArray(payload.days) || payload.days.length === 0) continue;
-        for (const entry of payload.days) holidays.set(entry.date, Boolean(entry.isOffDay));
-        covered.add(year);
-        log(`已加载 ${year} 年节假日安排（${payload.days.length} 天）`);
-        break;
-      } catch (error) {
-        log(`节假日数据不可用 ${url}: ${error.message}`);
-      }
-    }
+    // 往年安排已经定稿，直接用本地缓存；当年与次年可能刚发布或微调，尝试刷新
+    const payload = await loadHolidayYear(year, {
+      cacheDir,
+      refresh: year >= today.getUTCFullYear(),
+    });
+    if (!payload) continue;
+    for (const entry of payload.days) holidays.set(entry.date, Boolean(entry.isOffDay));
+    covered.add(year);
+    log(`已加载 ${year} 年节假日安排（${payload.days.length} 天）`);
   }
   return { holidays, covered };
+}
+
+/** 读取某一年的节假日安排，优先本地缓存；刷新失败时退回缓存 */
+async function loadHolidayYear(year, { cacheDir, refresh }) {
+  const file = resolve(cacheDir, `${year}.json`);
+  const cached = await readCacheFile(file);
+  if (cached && !refresh) return cached;
+
+  for (const template of HOLIDAY_URLS) {
+    const url = template.replace('{year}', String(year));
+    try {
+      const text = await fetchText(url, { retries: 1, timeoutMs: 8000 });
+      const payload = JSON.parse(text);
+      if (payload.year !== year || !Array.isArray(payload.days) || payload.days.length === 0) continue;
+      await mkdir(cacheDir, { recursive: true });
+      await writeFile(file, text.endsWith('\n') ? text : `${text}\n`, 'utf8');
+      return payload;
+    } catch (error) {
+      log(`节假日数据不可用 ${url}: ${error.message}`);
+    }
+  }
+  if (cached) log(`${year} 年节假日数据刷新失败，使用本地缓存`);
+  return cached;
+}
+
+async function readCacheFile(file) {
+  try {
+    return JSON.parse(await readFile(file, 'utf8'));
+  } catch {
+    return null;
+  }
 }
 
 /** 从 start 起第 count 个工作日：放假不算，调休上班日算 */
@@ -261,7 +253,7 @@ export async function predictWindows(windows, today, horizon) {
   const last = parseDay(windows.at(-1).date);
   const years = new Set();
   for (let year = last.getUTCFullYear(); year <= horizon.getUTCFullYear(); year += 1) years.add(year);
-  const { holidays, covered } = await loadHolidays(years);
+  const { holidays, covered } = await loadHolidays(years, { today });
 
   const predicted = [];
   let current = last;
@@ -309,24 +301,31 @@ export function foldLine(line) {
 }
 
 export function summaryOf(window) {
-  if (window.status === 'unchanged') return '油价不作调整';
   if (window.direction === 'up') return '油价上调';
   if (window.direction === 'down') return '油价下调';
+  if (window.direction === 'unchanged') return '油价不作调整';
   return '油价调整';
 }
 
+const signed = (value) => (value > 0 ? `+${value}` : String(value));
+
 function confirmedEvent(window, stamp) {
   const day = parseDay(window.date);
-  const effect =
-    window.status === 'unchanged'
-      ? '本轮调价窗口不调整成品油价格。'
-      : '新价格自公布当日 24:00 起执行。';
+  const effective = parseDay(window.effective);
+  const priceLine = (label, price, change) => {
+    if (price === null) return null;
+    const suffix = change === null ? '' : `（较上期 ${signed(change)} 元/吨）`;
+    return `${label}：${price} 元/吨${suffix}`;
+  };
   const description = [
-    `国家发展改革委公告：${window.title}`,
-    `公告日期：${window.date}`,
-    effect,
-    `原文：${window.url}`,
-  ].join('\n');
+    `执行时间：${window.date} 24:00（即 ${window.effective} 00:00 起执行新价格）`,
+    priceLine('汽油', window.gasolinePrice, window.gasolineChange),
+    priceLine('柴油', window.dieselPrice, window.dieselChange),
+    `数据来源：东方财富数据中心 ${DATA_PAGE}`,
+  ]
+    .filter(Boolean)
+    .join('\n');
+
   return [
     'BEGIN:VEVENT',
     `UID:oil-pricing-${compactDay(day)}@${REPO}`,
@@ -338,7 +337,7 @@ function confirmedEvent(window, stamp) {
     'CATEGORIES:油价',
     'STATUS:CONFIRMED',
     'TRANSP:TRANSPARENT',
-    `URL:${window.url}`,
+    `URL:${DATA_PAGE}`,
     'END:VEVENT',
   ];
 }
@@ -347,7 +346,7 @@ function predictedEvent(day, stamp) {
   const description = [
     '按“每 10 个工作日一调”的机制推算出的调价窗口，尚未公布，',
     '最终以国家发展改革委公告为准。',
-    `数据来源：${LIST_BASE}`,
+    `数据来源：${DATA_PAGE}`,
   ].join('\n');
   return [
     'BEGIN:VEVENT',
@@ -360,7 +359,7 @@ function predictedEvent(day, stamp) {
     'CATEGORIES:油价',
     'STATUS:TENTATIVE',
     'TRANSP:TRANSPARENT',
-    `URL:${LIST_BASE}`,
+    `URL:${DATA_PAGE}`,
     'END:VEVENT',
   ];
 }
@@ -373,7 +372,7 @@ export function buildIcs(windows, predicted, stamp) {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     `X-WR-CALNAME:${escapeText(CALENDAR_NAME)}`,
-    `X-WR-CALDESC:${escapeText('国内成品油调价窗口。数据来源：国家发展改革委新闻发布栏目。')}`,
+    `X-WR-CALDESC:${escapeText('国内成品油调价窗口。数据来源：东方财富数据中心。')}`,
     'X-WR-TIMEZONE:Asia/Shanghai',
     'REFRESH-INTERVAL;VALUE=DURATION:P1W',
     'X-PUBLISHED-TTL:PT6H',
@@ -392,6 +391,12 @@ export function buildIcs(windows, predicted, stamp) {
   return lines.map(foldLine).join('\r\n') + '\r\n';
 }
 
+/** 日历只保留最近一段时间内的已公布窗口，更早的记录仍在 data/adjustments.json 里 */
+export const visibleWindows = (windows, today) => {
+  const floor = addDays(today, -HISTORY_DAYS);
+  return windows.filter((window) => parseDay(window.date) >= floor);
+};
+
 /** '2026-11-23T12:36:21Z' -> '20261123T123621Z' */
 export const stampOf = (updatedIso) => updatedIso.replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
 
@@ -402,28 +407,31 @@ export const stampOf = (updatedIso) => updatedIso.replace(/[-:]/g, '').replace(/
 export async function loadCache() {
   try {
     const payload = JSON.parse(await readFile(DATA_FILE, 'utf8'));
-    return { source: LIST_BASE, updated: null, windows: [], ...payload };
+    const windows = Array.isArray(payload.windows) ? payload.windows : [];
+    if (windows.some((window) => typeof window.effective !== 'string')) {
+      log('缓存是旧格式，重新拉取全部历史');
+      return { source: DATA_PAGE, updated: null, windows: [] };
+    }
+    return { source: DATA_PAGE, updated: null, ...payload, windows };
   } catch (error) {
     if (error.code !== 'ENOENT') log(`缓存文件不可用，重新生成：${error.message}`);
-    return { source: LIST_BASE, updated: null, windows: [] };
+    return { source: DATA_PAGE, updated: null, windows: [] };
   }
 }
 
 function parseArgs(argv) {
-  const args = { pages: 12, today: null };
-  for (let index = 0; index < argv.length; index += 1) {
-    const flag = argv[index];
-    if (flag === '--pages') args.pages = Number(argv[(index += 1)]);
-    else if (flag === '--today') args.today = argv[(index += 1)];
+  const args = { today: null, full: false, help: false };
+  for (const flag of argv) {
+    if (flag === '--full') args.full = true;
     else if (flag === '--help' || flag === '-h') args.help = true;
+    else if (flag.startsWith('--today=')) args.today = flag.slice('--today='.length);
     else throw new Error(`未知参数：${flag}`);
   }
-  if (!Number.isInteger(args.pages) || args.pages < 1) throw new Error('--pages 需要正整数');
   if (args.today && !/^\d{4}-\d{2}-\d{2}$/.test(args.today)) throw new Error('--today 需要 YYYY-MM-DD');
   return args;
 }
 
-const USAGE = `用法：node scripts/update.mjs [--pages 12] [--today YYYY-MM-DD]`;
+const USAGE = '用法：node scripts/update.mjs [--full] [--today YYYY-MM-DD]';
 
 export async function main(argv = []) {
   const args = parseArgs(argv);
@@ -436,9 +444,11 @@ export async function main(argv = []) {
   const cache = await loadCache();
   const cached = [...cache.windows].sort((a, b) => a.date.localeCompare(b.date));
 
+  const since = args.full ? null : latestEffective(cached) || null;
   let fetched;
   try {
-    fetched = await collectWindows(cached, args.pages);
+    if (since) log(`增量抓取：只取执行日晚于 ${since} 的记录（已在缓存中的不再重复拉取）`);
+    fetched = await fetchAdjustments(since);
   } catch (error) {
     log(`抓取失败：${error.message}`);
     if (cached.length === 0) {
@@ -446,16 +456,14 @@ export async function main(argv = []) {
       return 1;
     }
     log('沿用上次缓存的数据继续生成');
-    fetched = cached;
+    fetched = [];
   }
 
-  const merged = new Map(cached.map((item) => [item.date, item]));
-  mergeItems(merged, fetched);
-  const windows = [...merged.values()].sort((a, b) => a.date.localeCompare(b.date));
-
+  const windows = mergeWindows(cached, fetched);
   const changed = JSON.stringify(windows) !== JSON.stringify(cached);
   const updated = changed || !cache.updated ? new Date().toISOString().replace(/\.\d{3}Z$/, 'Z') : cache.updated;
-  if (!changed) log('调价公告没有变化');
+  if (!changed) log('调价记录没有变化');
+  else log(`新增 ${windows.length - cached.length} 条调价记录`);
 
   const horizon = addDays(today, PREDICT_HORIZON_DAYS);
   const predicted = await predictWindows(windows, today, horizon);
@@ -464,11 +472,15 @@ export async function main(argv = []) {
   await mkdir(dirname(DATA_FILE), { recursive: true });
   await writeFile(
     DATA_FILE,
-    JSON.stringify({ source: LIST_BASE, updated, windows }, null, 2) + '\n',
+    JSON.stringify({ source: DATA_PAGE, updated, windows }, null, 2) + '\n',
     'utf8',
   );
-  await writeFile(ICS_FILE, buildIcs(windows, predicted, stampOf(updated)), 'utf8');
-  log(`已写入 data/adjustments.json（${windows.length} 条公告）与 oil-pricing.ics（${predicted.length} 条预测）`);
+  const visible = visibleWindows(windows, today);
+  await writeFile(ICS_FILE, buildIcs(visible, predicted, stampOf(updated)), 'utf8');
+  log(
+    `已写入 data/adjustments.json（${windows.length} 条记录）与 oil-pricing.ics` +
+      `（${visible.length} 条已公布 + ${predicted.length} 条预测）`,
+  );
   return 0;
 }
 
